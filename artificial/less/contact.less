@@ -1,46 +1,94 @@
 @import "variables";
 @import "elements";
+main {
+  display: block;
+  position: relative;
 
+  &::after{
+    content: "";
+    background: url('/artificial/images/contact-bg.png');
+    opacity: 0.5;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;
+  }
+}
 #contact {
+  display: block;
+  position: relative;
+
+  &::after{
+    content: "";
+    background: url('/artificial/images/contact-bg.png');
+    opacity: 0.5;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;
+  }
+
   .frm-rt-50 {
     p {
       font-size:16px;
     }
   }
-  .input-row {
-    margin-bottom:15px;
-  }
-  color: #545454;
+  color: #8e8e8e;
   h3 {
     font-size:24px;
     font-weight:600;
+  }
+
+  .bootstrap-select {
+    width: 100% !important;
+  }
+
+  .form-control {
+    padding: 32px  !important;
+    line-height: 16px !important;
   }
   label {
     font-weight:400;
     font-size:18px;
   }
-  .bootstrap-select {
-    width: 100% !important;
+  input[type=text],
+  input[type=email], textarea,
+  {
+     padding: 16px;
+  }
+  select, .selectpicker.btn-default{
+    padding: 16px  !important;
+    line-height: 16px !important;
   }
   .filter-option {
-    font-size:16px;
+    font-size:16px !important;
+    line-height: 22px !important;
   }
   input[type=text],
   input[type=email], textarea, select, .selectpicker.btn-default {
-    border: 1px solid #494949 !important;
+    border: 1px solid #494949;
     background:transparent !important;
     border-radius: 0 !important;
-    padding: 16px!important;
+    line-height: 16px !important;
     color:#898989;
     font-size:16px !important;
     text-shadow:none;
+    max-width:100%;
     box-shadow:none;
     .trans(border 0.2s ease);
 
-    &:hover, &:focus, &:active {
-      border-color:#fc6057 !important;
+    &:hover, &:focus {
+      border-color:#fc6057;
       outline: 0 !important;
     }
+  }
+
+  textarea {
+    height:180px !important;
   }
 
   // The selectpicker dropdown

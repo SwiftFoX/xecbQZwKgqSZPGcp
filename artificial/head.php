@@ -17,6 +17,8 @@
 
   <script src="/artificial/js/bootstrap-select.js"></script>
 
+  <script src="/artificial/js/bootstrap-validator.js"></script>
+
   <script src="/artificial/js/bootstrap-hover.js"></script>
 
   <link rel='stylesheet' type='text/css' href='/artificial/font-awesome/css/font-awesome.min.css' />

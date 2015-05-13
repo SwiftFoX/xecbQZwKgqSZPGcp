@@ -4800,10 +4800,12 @@
 }
 html,
 body {
-  background: #292b32;
   height: 100% !important;
   margin: 0;
   padding: 0;
+  z-index: -2;
+  position: relative;
+  background-color: #131517 !important;
 }
 ::selection {
   background: #ff9898;
@@ -4864,7 +4866,7 @@ a:hover {
 .generic-btn:hover,
 .generic-btn:active,
 .generic-btn:focus {
-  border-color: #fc6057  !important;
+  border-color: #fc6057 !important;
 }
 .generic-btn:active {
   display: inline-block !important;
@@ -4886,21 +4888,99 @@ a:hover {
   -webkit-transform: scale(0.9) !important;
   transform: scale(0.9) !important;
 }
-input[type=text],
-textarea,
-input[type=email],
-input[type=password],
-input[type=tel],
-input[type=url],
-input[type=search],
-input[type=date] {
+label.checkbox-label {
+  padding-left: 10px;
+  cursor: pointer;
+  line-height: 20px;
+  display: inline-block;
+  margin: 0 !important;
+  float: left;
+  -webkit-touch-callout: none !important;
+  -webkit-user-select: none !important;
+  -khtml-user-select: none !important;
+  -moz-user-select: none !important;
+  -ms-user-select: none !important;
+  user-select: none !important;
+  -webkit-transition: all 0.2s ease-out !important;
+  -moz-transition: all 0.2s ease-out !important;
+  -o-transition: all 0.2s ease-out !important;
+  transition: all 0.2s ease-out !important;
+}
+label.checkbox-label:hover {
+  color: #898989;
+}
+input[type="checkbox"]:checked,
+input[type="checkbox"][aria-expanded="true"] {
+  position: relative;
+}
+input[type="checkbox"]:checked:before,
+input[type="checkbox"][aria-expanded="true"]:before {
+  font-family: 'FontAwesome';
+  content: "\f00c";
+  color: #fc6057;
+  width: 20px !important;
+  height: 20px !important;
+  display: block;
+  position: absolute;
+  font-size: 14px;
+  line-height: 20px;
+  top: 50%;
+  left: 50%;
+  margin-left: -10px;
+  margin-top: -10px;
+  text-align: center;
+  background: none !important;
+}
+input[type="checkbox"] {
+  -webkit-touch-callout: none !important;
+  -webkit-user-select: none !important;
+  -khtml-user-select: none !important;
+  -moz-user-select: none !important;
+  -ms-user-select: none !important;
+  user-select: none !important;
+  float: left;
+  background: transparent !important;
+  border: 1px solid #494949 !important;
+  color: #e5e5e5;
+  -webkit-appearance: button;
+  appearance: button;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  outline: 0;
+  cursor: pointer;
+  margin: 0 !important;
+  -webkit-transition: border 0.3s ease-in-out !important;
+  -moz-transition: border 0.3s ease-in-out !important;
+  -o-transition: border 0.3s ease-in-out !important;
+  transition: border 0.3s ease-in-out !important;
+}
+input[type="checkbox"]:before {
+  background: #fc6057 !important;
+}
+input[type="checkbox"]:active,
+input[type="checkbox"]:hover,
+input[type="checkbox"]:focus {
+  outline: 0 !important;
+}
+input[type="checkbox"]:hover {
+  border-color: #fc6057 !important;
+}
+.form-group input[type=text],
+.form-group textarea,
+.form-group input[type=email],
+.form-group input[type=password],
+.form-group input[type=tel],
+.form-group input[type=url],
+.form-group input[type=search],
+.form-group input[type=date] {
   font-family: 'Titillium Web', sans-serif;
-  padding: 10px!important;
   width: 100%;
   border: 0px;
   border-bottom: 1px solid #fff;
   font-size: 12px;
   line-height: 22px;
+  padding: 10px;
   color: #555;
   background-color: #efefef;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.09) inset;
@@ -4921,7 +5001,6 @@ input[type=date] {
   width: 100%;
   min-width: 1192px;
   min-height: 100%;
-  background: #131517;
 }
 .container {
   margin: 0 auto !important;
@@ -4945,12 +5024,12 @@ input[type=date] {
 .container input[type=search],
 .container input[type=date] {
   background-color: transparent!important;
-  border: 1px solid #ccc!important;
+  border: 1px solid #ccc;
   box-shadow: none!important;
   -webkit-box-shadow: none!important;
-  font-size: 16px!important;
+  font-size: 16px;
   -o-box-shadow: none!important;
-  padding: 16px!important;
+  padding: 16px;
 }
 header {
   position: relative;
@@ -5357,7 +5436,13 @@ footer .footer-content b {
   float: left;
   display: inline-block;
 }
-.input-row {
+.form-group.required label:after {
+  display: inline;
+  content: "*";
+  padding-left: 5px;
+  color: #fc6057;
+}
+.form-group {
   width: 100%;
   display: inline-block;
 }
@@ -5455,4 +5540,10 @@ footer .footer-content b {
 }
 .scroll-top-wrapper i.fa {
   line-height: inherit;
+}
+.form-group.has-error input,
+.form-group.has-error textarea,
+.form-group.has-error select,
+.form-group.has-error .selectpicker {
+  border-color: #fc6057 !important;
 }

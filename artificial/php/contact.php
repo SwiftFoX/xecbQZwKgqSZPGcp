@@ -1,38 +1,49 @@
 <link rel="stylesheet" href="css/contact.css">
 <section id="contact" class="hdr-sc rg-sc">
   <div class="container">
-    <form id="contact-form"  class="frm-lt-50" method="GET" action="./php/scripts/send-message.php">
+    <form id="contact-form" role="form"
+      class="frm-lt-50" method="GET" action="./php/scripts/send-message.php">
       <h3>Send us an email!</h3>
       <div style="height: 30px;" class="divider"></div>
-      <span class="input-row">
-        <label for="fullname">Fullname</label>
-        <input type="text" name="fullname" id="fullname"/>
+      <span class="form-group required">
+        <label for="fullname" class="control-label">Fullname</label>
+        <input type="text" autocomplete="off" required name="fullname" id="fullname"/>
+        <div class="help-block with-errors"></div>
       </span>
-      <span class="input-row">
-        <label for="email">Email</label>
-        <input type="email" name="email" id="email"/>
+      <span class="form-group required">
+        <label for="email" class="control-label">Email</label>
+        <input type="email"  autocomplete="off" required name="email" id="email"/>
+        <div class="help-block with-errors"></div>
       </span>
-      <span class="input-row">
-        <label for="subject">Budget</label>
-        <select  name="budget" id="budget" class="selectpicker">
-          <option name="default">Select your budget</option>
-          <option>$350-750 USD</option>
-          <option>$750-1500 USD</option>
-          <option>$1500-3000 USD</option>
-          <option>$3000+ USD</option>
+      <span class="form-group">
+        <input type="checkbox"  name="project-chk" id="project-chk" value="quote"
+        data-toggle="collapse" href="#collapseBudget" aria-expanded="false" aria-controls="collapseBudget"/>
+        <label for="project-chk" class="checkbox-label control-label" >Contacting us about a project or quote?</label>
+      </span>
+      <span id="collapseBudget" class="collapse form-group required">
+        <label for="subject" class="control-label">Budget</label>
+        <select  name="budget" required id="budget" data-budget="2" class="selectpicker required">
+          <option value="">Select your budget</option>
+          <option value="350">$350-750 USD</option>
+          <option value="750">$750-1500 USD</option>
+          <option value="1500">$1500-3000 USD</option>
+          <option value="3000">$3000+ USD</option>
         </select>
+        <div class="help-block with-errors"></div>
       </span>
-      <span class="input-row">
-        <label for="subject">Subject</label>
-        <input type="text" name="subject" id="subject"/>
+      <span class="form-group required">
+        <label for="subject" class="control-label">Subject</label>
+        <input  type="text" autocomplete="off" required name="subject" id="subject"/>
+        <div class="help-block with-errors"></div>
       </span>
-      <span class="input-row">
-        <label for="message">Message</label>
-        <textarea name="message" id="subject"></textarea>
+      <span class="form-group required">
+        <label for="message" class="control-label">Message</label>
+        <textarea name="message"  autocomplete="off" required id="subject"></textarea>
+        <div class="help-block with-errors"></div>
       </span>
       <div style="height: 20px;" class="divider"></div>
-      <span class="input-row">
-        <button type="submit" form="contact-form" class="generic-btn hvr-rectangle-out" name="submit" value="send">Send</button>
+      <span class="form-group">
+        <button type="submit" id="send" form="contact-form" class="generic-btn hvr-rectangle-out" name="submit" value="send">Send</button>
       </span>
     </form>
     <div class="frm-rt-50">
@@ -50,6 +61,20 @@
 <script>
 $(function(){
   $('.selectpicker').selectpicker();
+
+  $('#contact-form').validator();
+
+  $('#send').on('click', function(){
+    $('#contact-form').validator('validate');
+  });
+
+  $('#collapseBudget').on('show.bs.collapse', function () {
+    $('#budget').prop('disabled', false);
+  });
+
+  $('#collapseBudget').on('hidden.bs.collapse', function () {
+    $('#budget').prop('disabled', 'disabled');
+  });
 });
 
 </script>
