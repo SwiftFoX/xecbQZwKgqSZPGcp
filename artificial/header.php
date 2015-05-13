@@ -71,6 +71,16 @@
 <script>
 $(function()
 {
+  $('input[type=checkbox]').on('click', function(){
+    if($(this).attr('checked')){
+      $(this).attr('checked', false);
+      $(this).next().addClass("checked");
+    }else {
+      $(this).attr('checked', true);
+      $(this).next().removeClass("checked");
+    }
+  });
+
   $('.dropdown-toggle').dropdownHover().dropdown()
   $('.dropdown-menu input, .dropdown-menu label').click(function(e) {
         e.stopPropagation();

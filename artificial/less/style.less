@@ -59,48 +59,32 @@ a {
     .shrink() !important;
   }
 }
-label.checkbox-label {
-  padding-left:10px;
-  cursor:pointer;
-  line-height:20px;
-  display:inline-block;
-  margin:0 !important;
-  float:left;
-  .noselect()!important;
-  .transition() !important;
-  &:hover {
-    color:#898989;
-  }
-}
-input[type="checkbox"]:checked, input[type="checkbox"][aria-expanded="true"]  {
-  position:relative;
-  &:before {
-    font-family: 'FontAwesome';
-    content:"\f00c";
-    color: @color-aa-d-red;
-    width:20px !important;
-    height:20px !important;
-    display:block;
-    position:absolute;
-    font-size:14px;
-    line-height:20px;
-    top:50%;
-    left:50%;
-    margin-left:-10px;
-    margin-top:-10px;
-    text-align:center;
-    background:none !important;
-  }
-}
 
-input[type="checkbox"] {
+label.checkbox-label input[type="checkbox"] {display:none;}
+label.checkbox-label {
+  cursor:pointer;
+  .transition();
+  .chk-text {
+    margin-left:10px;
+    float:left;
+    line-height:19px;
+  }
+  &:hover {
+    color:#d3d3d3 !important;
+  }
+}
+label.checkbox-label span
+{
+  -webkit-appearance:none;
+  -moz-appearance:none;
+  -ms-appearance:none;
+  appearance:none;
   .noselect() !important;
   float:left;
-  background: transparent !important;
-  border: 1px solid #494949 !important;
+  background: transparent;
+  border: 1px solid #494949 ;
   color: #e5e5e5;
-  -webkit-appearance:button;
-  appearance:button;
+  content:"";
   display:inline-block;
   width:20px;
   height:20px;
@@ -109,7 +93,6 @@ input[type="checkbox"] {
   margin:0 !important;
   .trans(border 0.3s ease-in-out)!important;
   &:before {
-    background: @color-aa-d-red !important;
   }
   &:active, &:hover, &:focus {
     outline: 0 !important;
@@ -118,6 +101,26 @@ input[type="checkbox"] {
     border-color: @color-aa-d-red  !important;
   }
 }
+
+.chkk.checked {
+  position:relative;
+  background-color:transparent !important;
+  &:before {
+    font-family: 'FontAwesome';
+    content:"\f00c";
+    display:block;
+    color: @color-aa-d-red;
+    position:absolute;
+    font-size:12px;
+    width:20px;
+    height:20px;
+    top:50%;
+    margin-top:-8px;
+    text-align:center;
+    background-color:transparent !important;
+  }
+}
+
 .form-group{
   input[type=text], textarea, input[type=email], input[type=password], input[type=tel], input[type=url], input[type=search], input[type=date] {
     font-family: 'Titillium Web', sans-serif;
@@ -175,14 +178,53 @@ header {
   height: auto;
 }
 main {
-  padding-bottom:230px;
+  padding-bottom:250px;
   margin-top:-88px;
 }
 section.hdr-sc {
-  padding-top:108px !important;;
+  padding-top:108px !important;
 }
 section.rg-sc {
   padding: 40px 0;
+}
+section.full-sc {
+  height:inherit;
+}
+section.med-grey-sc {
+  background-color:#1d1e21;
+}
+section.img-hdr {
+  overflow:hidden;
+  display:block;
+  height:180px;
+  width:100%;
+  position:relative;
+  top:0;
+  margin-top:-110px;
+  z-index:-2;
+  h2 {
+    position: absolute;
+    bottom: 15px;
+    color:#eaeaea;
+    font-size:34px;
+  }
+  img {
+    position:absolute;
+    top:0;
+    z-index:-2;
+    display:block;
+    width:auto;
+    
+
+    -moz-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    filter: FlipH;
+    -ms-filter: "FlipH";
+  }
+
+
 }
 #full-width-banner {
   width:100%;
@@ -471,6 +513,7 @@ footer {
   width: 100%;
   clear: both;
   .box-sizing();
+  display:table !important;
   min-width: 1192px;
   -webkit-box-flex: 0;
   -webkit-flex: none;
@@ -479,16 +522,21 @@ footer {
   position: absolute;
   bottom: 0;
   width: 100%;
-  height: 230px;
+  height: 250px;
   background-color: #f5f5f5;
 
   .footer-content {
-    float: none;
-    display: block;
+    float: left;
     width: auto;
+    display:block;
     margin: 0;
-    display:table;
-    padding: 40px 0 40px 0;
+    padding: 40px 0 20px 0;
+
+    .copyright {
+      width:100%;
+      color:#b9b9b9;
+      padding-top:20px;
+    }
 
     .col {
       display:table-cell;
@@ -530,7 +578,8 @@ footer {
       .transition();
       font-size:14px;
       line-height:16px;
-
+      margin-bottom:8px;
+      displaY:block;
       a:hover {
         color:@color-aa-d-red;
       }

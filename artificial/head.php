@@ -15,6 +15,10 @@
 
   <script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
 
+  <script src="/artificial/js/icheck/icheck.min.js"></script>
+  <script src="/artificial/js/icheck/custom.min.js"></script>
+  <link href="/artificial/js/icheck/skins/all.css" rel="stylesheet">
+
   <script src="/artificial/js/bootstrap-select.js"></script>
 
   <script src="/artificial/js/bootstrap-validator.js"></script>

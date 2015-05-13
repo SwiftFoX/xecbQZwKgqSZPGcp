@@ -1,6 +1,7 @@
 <footer>
 <div class="container">
   <div class="footer-content">
+    <div class="row">
     <div class="col">
       <div class="foot-col-title row">NAVIGATE</div>
       <ul class="foot-list row">
@@ -36,6 +37,10 @@
         <li><b>Email:</b> hello@johndoe.com
       </ul>
     </div>
-  <div>
+  </div>
+  <div class="row copyright">
+    <div class="col">ArtificialAnimation.com &copy; Copyright <script>document.write((new Date).getFullYear())</script></div>
+  </div>
+  </div>
 </div>
 </footer>

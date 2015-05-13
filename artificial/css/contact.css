@@ -85,6 +85,10 @@ main::after {
   -moz-transition: border 0.2s ease;
   -o-transition: border 0.2s ease;
   transition: border 0.2s ease;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -o-backface-visibility: hidden;
+  backface-visibility: hidden;
 }
 #contact input[type=text]:hover,
 #contact input[type=email]:hover,

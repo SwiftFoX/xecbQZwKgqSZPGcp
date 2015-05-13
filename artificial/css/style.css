@@ -4859,6 +4859,10 @@ a:hover {
   -moz-transition: border 0.3s ease-in-out !important;
   -o-transition: border 0.3s ease-in-out !important;
   transition: border 0.3s ease-in-out !important;
+  -webkit-backface-visibility: hidden !important;
+  -moz-backface-visibility: hidden !important;
+  -o-backface-visibility: hidden !important;
+  backface-visibility: hidden !important;
 }
 .generic-btn:before {
   background: #fc6057 !important;
@@ -4888,50 +4892,33 @@ a:hover {
   -webkit-transform: scale(0.9) !important;
   transform: scale(0.9) !important;
 }
+label.checkbox-label input[type="checkbox"] {
+  display: none;
+}
 label.checkbox-label {
-  padding-left: 10px;
   cursor: pointer;
-  line-height: 20px;
-  display: inline-block;
-  margin: 0 !important;
+  -webkit-transition: all 0.2s ease-out;
+  -moz-transition: all 0.2s ease-out;
+  -o-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -o-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+label.checkbox-label .chk-text {
+  margin-left: 10px;
   float: left;
-  -webkit-touch-callout: none !important;
-  -webkit-user-select: none !important;
-  -khtml-user-select: none !important;
-  -moz-user-select: none !important;
-  -ms-user-select: none !important;
-  user-select: none !important;
-  -webkit-transition: all 0.2s ease-out !important;
-  -moz-transition: all 0.2s ease-out !important;
-  -o-transition: all 0.2s ease-out !important;
-  transition: all 0.2s ease-out !important;
+  line-height: 19px;
 }
 label.checkbox-label:hover {
-  color: #898989;
+  color: #d3d3d3 !important;
 }
-input[type="checkbox"]:checked,
-input[type="checkbox"][aria-expanded="true"] {
-  position: relative;
-}
-input[type="checkbox"]:checked:before,
-input[type="checkbox"][aria-expanded="true"]:before {
-  font-family: 'FontAwesome';
-  content: "\f00c";
-  color: #fc6057;
-  width: 20px !important;
-  height: 20px !important;
-  display: block;
-  position: absolute;
-  font-size: 14px;
-  line-height: 20px;
-  top: 50%;
-  left: 50%;
-  margin-left: -10px;
-  margin-top: -10px;
-  text-align: center;
-  background: none !important;
-}
-input[type="checkbox"] {
+label.checkbox-label span {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
   -webkit-touch-callout: none !important;
   -webkit-user-select: none !important;
   -khtml-user-select: none !important;
@@ -4939,11 +4926,10 @@ input[type="checkbox"] {
   -ms-user-select: none !important;
   user-select: none !important;
   float: left;
-  background: transparent !important;
-  border: 1px solid #494949 !important;
+  background: transparent;
+  border: 1px solid #494949 ;
   color: #e5e5e5;
-  -webkit-appearance: button;
-  appearance: button;
+  content: "";
   display: inline-block;
   width: 20px;
   height: 20px;
@@ -4954,17 +4940,36 @@ input[type="checkbox"] {
   -moz-transition: border 0.3s ease-in-out !important;
   -o-transition: border 0.3s ease-in-out !important;
   transition: border 0.3s ease-in-out !important;
+  -webkit-backface-visibility: hidden !important;
+  -moz-backface-visibility: hidden !important;
+  -o-backface-visibility: hidden !important;
+  backface-visibility: hidden !important;
 }
-input[type="checkbox"]:before {
-  background: #fc6057 !important;
-}
-input[type="checkbox"]:active,
-input[type="checkbox"]:hover,
-input[type="checkbox"]:focus {
+label.checkbox-label span:active,
+label.checkbox-label span:hover,
+label.checkbox-label span:focus {
   outline: 0 !important;
 }
-input[type="checkbox"]:hover {
+label.checkbox-label span:hover {
   border-color: #fc6057 !important;
+}
+.chkk.checked {
+  position: relative;
+  background-color: transparent !important;
+}
+.chkk.checked:before {
+  font-family: 'FontAwesome';
+  content: "\f00c";
+  display: block;
+  color: #fc6057;
+  position: absolute;
+  font-size: 12px;
+  width: 20px;
+  height: 20px;
+  top: 50%;
+  margin-top: -8px;
+  text-align: center;
+  background-color: transparent !important;
 }
 .form-group input[type=text],
 .form-group textarea,
@@ -5039,7 +5044,7 @@ header {
   height: auto;
 }
 main {
-  padding-bottom: 230px;
+  padding-bottom: 250px;
   margin-top: -88px;
 }
 section.hdr-sc {
@@ -5047,6 +5052,41 @@ section.hdr-sc {
 }
 section.rg-sc {
   padding: 40px 0;
+}
+section.full-sc {
+  height: inherit;
+}
+section.med-grey-sc {
+  background-color: #1d1e21;
+}
+section.img-hdr {
+  overflow: hidden;
+  display: block;
+  height: 180px;
+  width: 100%;
+  position: relative;
+  top: 0;
+  margin-top: -110px;
+  z-index: -2;
+}
+section.img-hdr h2 {
+  position: absolute;
+  bottom: 15px;
+  color: #eaeaea;
+  font-size: 34px;
+}
+section.img-hdr img {
+  position: absolute;
+  top: 0;
+  z-index: -2;
+  display: block;
+  width: auto;
+  -moz-transform: scaleX(-1);
+  -o-transform: scaleX(-1);
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+  filter: FlipH;
+  -ms-filter: "FlipH";
 }
 #full-width-banner {
   width: 100%;
@@ -5240,6 +5280,10 @@ section.rg-sc {
   -moz-transition: all 0.2s ease-out;
   -o-transition: all 0.2s ease-out;
   transition: all 0.2s ease-out;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -o-backface-visibility: hidden;
+  backface-visibility: hidden;
   background: none;
   border: none;
 }
@@ -5289,6 +5333,10 @@ section.rg-sc {
   -moz-transition: all 0.2s ease-out;
   -o-transition: all 0.2s ease-out;
   transition: all 0.2s ease-out;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -o-backface-visibility: hidden;
+  backface-visibility: hidden;
 }
 .oj-button a:hover {
   background-color: #232428;
@@ -5314,6 +5362,10 @@ section.rg-sc {
   -moz-transition: all 0.2s ease-out;
   -o-transition: all 0.2s ease-out;
   transition: all 0.2s ease-out;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -o-backface-visibility: hidden;
+  backface-visibility: hidden;
 }
 #services .service-tab .service-icon {
   margin-bottom: 30px;
@@ -5327,6 +5379,10 @@ section.rg-sc {
   -moz-transition: all 0.2s ease-out;
   -o-transition: all 0.2s ease-out;
   transition: all 0.2s ease-out;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -o-backface-visibility: hidden;
+  backface-visibility: hidden;
 }
 #services .service-tab a {
   position: absolute;
@@ -5353,6 +5409,7 @@ footer {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
+  display: table !important;
   min-width: 1192px;
   -webkit-box-flex: 0;
   -webkit-flex: none;
@@ -5361,16 +5418,20 @@ footer {
   position: absolute;
   bottom: 0;
   width: 100%;
-  height: 230px;
+  height: 250px;
   background-color: #f5f5f5;
 }
 footer .footer-content {
-  float: none;
-  display: block;
+  float: left;
   width: auto;
+  display: block;
   margin: 0;
-  display: table;
-  padding: 40px 0 40px 0;
+  padding: 40px 0 20px 0;
+}
+footer .footer-content .copyright {
+  width: 100%;
+  color: #b9b9b9;
+  padding-top: 20px;
 }
 footer .footer-content .col {
   display: table-cell;
@@ -5412,8 +5473,14 @@ footer .footer-content p {
   -moz-transition: all 0.2s ease-out;
   -o-transition: all 0.2s ease-out;
   transition: all 0.2s ease-out;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -o-backface-visibility: hidden;
+  backface-visibility: hidden;
   font-size: 14px;
   line-height: 16px;
+  margin-bottom: 8px;
+  displaY: block;
 }
 footer .footer-content a a:hover,
 footer .footer-content p a:hover {

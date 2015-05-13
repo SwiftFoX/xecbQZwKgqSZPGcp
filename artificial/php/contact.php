@@ -16,9 +16,12 @@
         <div class="help-block with-errors"></div>
       </span>
       <span class="form-group">
-        <input type="checkbox"  name="project-chk" id="project-chk" value="quote"
-        data-toggle="collapse" href="#collapseBudget" aria-expanded="false" aria-controls="collapseBudget"/>
-        <label for="project-chk" class="checkbox-label control-label" >Contacting us about a project or quote?</label>
+        <label for="project-chk" class="checkbox-label control-label" >
+          <input type="checkbox"  name="project-chk" id="project-chk" value="quote"
+          data-toggle="collapse" href="#collapseBudget" aria-expanded="false" checked='false' aria-controls="collapseBudget"/>
+          <span class="chkk"></span>
+          <div class="chk-text">Contacting us about a project or quote?</div>
+        </label>
       </span>
       <span id="collapseBudget" class="collapse form-group required">
         <label for="subject" class="control-label">Budget</label>

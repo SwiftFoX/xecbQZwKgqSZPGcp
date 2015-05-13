@@ -110,6 +110,10 @@
   -webkit-transition-duration: @duration;
   -o-transition-duration: @duration;
   transition-duration: @duration;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -o-backface-visibility: hidden;
+  backface-visibility: hidden;
 }
 .transform(@arguments) {
   -webkit-transform: @arguments;
@@ -117,6 +121,10 @@
   -o-transform: @arguments;
   -ms-transform: @arguments;
   transform: @arguments;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -o-backface-visibility: hidden;
+  backface-visibility: hidden;
 }
 .rotation(@deg:5deg){
   .transform(rotate(@deg));
@@ -129,12 +137,20 @@
   -moz-transition: @arguments;
   -o-transition: @arguments;
   transition: @arguments;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -o-backface-visibility: hidden;
+  backface-visibility: hidden;
 }
 .transition(@duration:0.2s, @ease:ease-out) {
   -webkit-transition: all @duration @ease;
   -moz-transition: all @duration @ease;
   -o-transition: all @duration @ease;
   transition: all @duration @ease;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -o-backface-visibility: hidden;
+  backface-visibility: hidden;
 }
 .inner-shadow(@horizontal:0, @vertical:1px, @blur:2px, @alpha: 0.4) {
   -webkit-box-shadow: inset @horizontal @vertical @blur rgba(0, 0, 0, @alpha);
