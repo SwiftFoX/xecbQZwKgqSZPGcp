@@ -1,5 +1,7 @@
 @import "variables";
 @import "elements";
+@import "hover-master/hover";
+
 #company {
   #team {
     margin: 0 auto!important;
@@ -10,19 +12,49 @@
       display:inline;
       float:left;
       width:300px;
-      height:300px;
+      height:auto;
       margin: 0 10px;
       color:#444;
       text-align:center;
       .box-sizing();
+      .member-circle,
       img {
-        .rounded(50%);
-        width:80%;
+        .noselect();
+        display:inline-block;
+        .rounded(50%) !important;
+        width:225px;
+        position:relative;
         max-width: 100%;
         height: auto;
         vertical-align: middle;
-        border: solid 10px #2a2c2d;
         .box-sizing();
+        border-width:8px !important;
+      }
+      .member-circle:before {
+        border: solid 8px #2a2c2d;
+        .transition();
+      }
+      .inner-circle {
+        .rounded(50%) !important;
+        display:block;
+        position:absolute;
+        width:225px;
+        top:0;
+        height:225px;
+        border: solid 8px #2a2c2d ;
+        .transition();
+      }
+      .ec-circle-hover {
+        &:before {
+          border-color:@color-aa-d-red !important;
+        }
+        .inner-circle{
+          border-color:@color-aa-d-red !important;
+        }
+      }
+      img {
+        width:100%;
+        padding:6px;
       }
       strong {
         display: block;
@@ -35,6 +67,50 @@
         width:100%;
         margin-bottom: 10px;
         padding-bottom: 15px;
+      }
+      .social-circles {
+        position:absolute;
+        top:0;
+        right:0;
+        .soc-circle {
+          .rounded(50%) !important;
+          display:block;
+          width:40px;
+          height:40px;
+          verticle-align:middle;
+          border: solid 3px #2a2c2d ;
+          background: #212323;
+          .transition();
+
+          &:hover {
+            .grow();
+            border-color:@color-aa-d-red;
+          }
+
+          i {
+            line-height:38px;
+          }
+
+          &:nth-child(1) {
+            position:absolute;
+            right:30px;
+          }
+          &:nth-child(2) {
+            position:absolute;
+            right:0px;
+            top:35px;
+          }
+          &:nth-child(3) {
+            position:absolute;
+            right:-18px;
+            top:80px;
+          }
+          &:nth-child(4) {
+            position:absolute;
+            right:-14px;
+            top:128px;
+          }
+        }
       }
     }
   }

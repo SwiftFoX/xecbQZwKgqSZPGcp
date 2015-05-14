@@ -1,17 +1,18 @@
 /* Ripple Out */
+
 .keyframes(~"@{nameSpace}-ripple-out", {
 	100% {
-		top: -(6px + 6px);
-		right: -(6px + 6px);
-		bottom: -(6px + 6px);
-		left: -(6px + 6px);
+		top: -(7px + 7px);
+		right: -(7px + 7px);
+		bottom: -(7px + 7px);
+		left: -(7px + 7px);
 		opacity: 0;
 	}
 });
 
 .ripple-out() {
-	@outerBorderWidth: 6px;
-	@innerBorderWidth: 6px;
+	@outerBorderWidth: 10px;
+	@innerBorderWidth: 10px;
 
 	.hacks();
 	position: relative;
@@ -25,6 +26,11 @@
 		bottom: 0;
 		left: 0;
 		.prefixed(animation-duration, 1s);
+		-webkit-border-radius: 50%;
+	  -moz-border-radius: 50%;
+	  -ms-border-radius: 50%;
+	  -o-border-radius: 50%;
+	  border-radius: 50%;
 	}
 
 	&:hover:before,

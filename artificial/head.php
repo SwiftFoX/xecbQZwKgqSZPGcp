@@ -23,6 +23,7 @@
   <link href="/artificial/js/icheck/skins/all.css" rel="stylesheet">
 
   <script src="/artificial/js/bootstrap-select.js"></script>
+  <script src="/artificial/js/modernizr.js"></script>
 
   <script src="/artificial/js/bootstrap-validator.js"></script>
 

@@ -2178,19 +2178,19 @@
 /* Ripple Out */
 @-webkit-keyframes hvr-ripple-out {
   100% {
-    top: -12px;
-    right: -12px;
-    bottom: -12px;
-    left: -12px;
+    top: -14px;
+    right: -14px;
+    bottom: -14px;
+    left: -14px;
     opacity: 0;
   }
 }
 @keyframes hvr-ripple-out {
   100% {
-    top: -12px;
-    right: -12px;
-    bottom: -12px;
-    left: -12px;
+    top: -14px;
+    right: -14px;
+    bottom: -14px;
+    left: -14px;
     opacity: 0;
   }
 }
@@ -2208,13 +2208,18 @@
 .hvr-ripple-out:before {
   content: '';
   position: absolute;
-  border: #e1e1e1 solid 6px;
+  border: #e1e1e1 solid 10px;
   top: 0;
   right: 0;
   bottom: 0;
   left: 0;
   -webkit-animation-duration: 1s;
   animation-duration: 1s;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
 }
 .hvr-ripple-out:hover:before,
 .hvr-ripple-out:focus:before,
