@@ -1,0 +1,14 @@
+html,
+body,
+.wrap,
+main,
+footer {
+  width: 990px;
+  min-width: 990px;
+}
+#full-width-banner {
+  min-width: 990px;
+}
+.container {
+  width: 990px !important;
+}

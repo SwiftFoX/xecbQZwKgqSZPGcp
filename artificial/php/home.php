@@ -45,14 +45,18 @@ $(function(){
 </script>
 <section id="portfolio-bar">
   <div class="container">
-    <span class="mission">Lorem ipsum dolor sit amet, consectetur adipiscing elit.  Sed fringilla felis ut turpis ullamcorper euismod.</span>
-    <div class="view-work oj-button"><a href="#">VIEW OUR WORK</a></div>
+    <div class="port-bar-content">
+        <span class="mission">Lorem ipsum dolor sit amet, consectetur adipiscing elit.  Sed fringilla felis ut turpis ullamcorper euismod.</span>
+          <div class="view-work oj-button"><a href="#">VIEW OUR WORK</a></div>
+    </div>
   </div>
 </section>
 <section id="services">
   <div class="container">
   <div class="service-tab">
     <a href="services/webdev.php"></a>
+
+    <div class="service-content">
     <div class="service-icon">
       <img src="images/icons/web.png"/>
     </div>
@@ -60,9 +64,12 @@ $(function(){
     <div class="service-description">
       <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed fringilla felis ut turpis ullamcorper euismod.</span>
     </div>
+    </div>
   </div>
   <div class="service-tab">
     <a href="services/motion.php"></a>
+
+    <div class="service-content">
     <div class="service-icon">
       <img src="images/icons/motion.png"/>
     </div>
@@ -71,8 +78,11 @@ $(function(){
       <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed fringilla felis ut turpis ullamcorper euismod.</span>
     </div>
   </div>
+  </div>
   <div class="service-tab">
     <a href="services/graphic.php"></a>
+
+    <div class="service-content">
     <div class="service-icon">
       <img src="images/icons/graphics.png"/>
     </div>
@@ -81,8 +91,11 @@ $(function(){
       <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed fringilla felis ut turpis ullamcorper euismod.</span>
     </div>
   </div>
+  </div>
   <div class="service-tab">
     <a href="services/audio.php"></a>
+
+    <div class="service-content">
     <div class="service-icon">
       <img src="images/icons/audio.png"/>
     </div>
@@ -90,6 +103,7 @@ $(function(){
     <div class="service-description">
       <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed fringilla felis ut turpis ullamcorper euismod.</span>
     </div>
+  </div>
   </div>
   </div>
 </section>

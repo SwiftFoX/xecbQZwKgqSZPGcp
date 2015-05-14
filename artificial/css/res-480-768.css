@@ -1,0 +1,34 @@
+html,
+body,
+.wrap,
+main,
+footer {
+  width: 768px;
+  min-width: 768px;
+}
+main {
+  padding-bottom: 272px;
+}
+#full-width-banner {
+  max-width: 768px !important;
+  min-width: 550px;
+  max-height: 400px;
+}
+#full-width-banner .carousel-inner {
+  max-height: 400px;
+}
+#full-width-banner .carousel-inner .item + img {
+  max-height: 400px;
+}
+#full-width-banner .carousel-inner .carousel-caption {
+  top: 180px;
+}
+#portfolio-bar {
+  overflow: hidden !important;
+}
+#portfolio-bar .mission {
+  max-width: 540px;
+}
+.container {
+  width: 768px !important;
+}
