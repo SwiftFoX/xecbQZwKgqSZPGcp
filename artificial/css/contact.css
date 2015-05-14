@@ -4,21 +4,6 @@
     A set of useful LESS mixins
     More info at: http://lesselements.com
   ---------------------------------------------------*/
-main {
-  display: block;
-  position: relative;
-}
-main::after {
-  content: "";
-  background: url('/artificial/images/contact-bg.png');
-  opacity: 0.5;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  position: absolute;
-  z-index: -1;
-}
 #contact {
   display: block;
   position: relative;
@@ -28,6 +13,7 @@ main::after {
   content: "";
   background: url('/artificial/images/contact-bg.png');
   opacity: 0.5;
+  margin-top: -20%;
   top: 0;
   left: 0;
   bottom: 0;

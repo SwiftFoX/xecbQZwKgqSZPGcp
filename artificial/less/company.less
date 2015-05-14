@@ -1,0 +1,41 @@
+@import "variables";
+@import "elements";
+#company {
+  #team {
+    margin: 0 auto!important;
+    position: relative;
+    width: 960px;
+    .box-sizing();
+    .member {
+      display:inline;
+      float:left;
+      width:300px;
+      height:300px;
+      margin: 0 10px;
+      color:#444;
+      text-align:center;
+      .box-sizing();
+      img {
+        .rounded(50%);
+        width:80%;
+        max-width: 100%;
+        height: auto;
+        vertical-align: middle;
+        border: solid 10px #2a2c2d;
+        .box-sizing();
+      }
+      strong {
+        display: block;
+        width:100%;
+        padding: 10px 0 0 0;
+        font-size: 16px;
+      }
+      em {
+        display: block;
+        width:100%;
+        margin-bottom: 10px;
+        padding-bottom: 15px;
+      }
+    }
+  }
+}
