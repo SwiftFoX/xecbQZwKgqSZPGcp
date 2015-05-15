@@ -5085,6 +5085,12 @@ header.header-divider h2 {
   margin: 0 auto;
   color: #1d1e21;
 }
+.quote p {
+  margin: 30px 0;
+  font-size: 20px;
+  text-align: center;
+  line-height: 1.6em;
+}
 .arrow-sc {
   position: absolute;
   left: 50%;

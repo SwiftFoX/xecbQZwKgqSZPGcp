@@ -4803,6 +4803,15 @@
   width: 25px;
   height: 25px;
 }
+#company .quote p {
+  color: #b3b3b3;
+}
+#company .quote p strong {
+  color: #d6d6d6;
+}
+#company .team-sc {
+  padding: 50px 0 ;
+}
 #company #team {
   margin: 0 auto!important;
   position: relative;
@@ -4818,12 +4827,23 @@
   width: 300px;
   height: auto;
   margin: 0 10px;
-  color: #444;
+  color: #545454;
   text-align: center;
   -ms-box-sizing: border-box;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
+}
+#company #team .member .member-description {
+  width: 240px;
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 10px;
+  color: #656565;
+  font-size: 16px;
+}
+#company #team .member strong {
+  color: #898989;
 }
 #company #team .member .member-circle,
 #company #team .member img {
@@ -4972,4 +4992,35 @@
   position: absolute;
   right: -14px;
   top: 128px;
+}
+#company #clients {
+  display: table;
+  margin: 0 auto;
+  position: relative;
+  text-align: center;
+  border-collapse: separate;
+}
+#company #clients img {
+  vertical-align: middle;
+}
+#company #clients .featured-row {
+  display: table-row;
+  border-collapse: separate;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+#company #clients .featured-col {
+  padding: 25px 0 ;
+  display: inline-block;
+  position: relative;
+  width: 33.333333%;
+  min-width: 244px;
+  float: left;
+  text-align: center;
+  margin: 30px 0;
+  border-right: 1px solid #434343;
+}
+#company #clients .featured-col:nth-child(3n) {
+  border-right: none;
 }
