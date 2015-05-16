@@ -1,0 +1,63 @@
+@import "variables";
+@import "elements";
+@import "/hover-master/hover";
+
+input[type="search"] {
+  padding: 10px !important;
+}
+#filter-options {
+  padding: 30px 30px;
+  background-color:#171819;
+  margin-bottom: 30px;
+}
+#grid {
+
+
+  figure {
+
+    img {
+      cursor:pointer;
+    }
+   .picture-item__title {
+      color:#606365;
+      font-size:18px;
+      float:left;
+      cursor:pointer;
+      .transition();
+   }
+   .picture-item__details {
+     padding: 1em;
+     background-color:#171819;
+     position:relative;
+     width:100%;
+     .transition();
+     line-height:24px;
+   }
+   .picture-item__tags {
+     margin:0;
+     z-index: 2;
+     .transition();
+     line-height:24px;
+   }
+
+    &::after {
+      content: ' ';
+      clear:both;
+      margin-bottom:30px;
+      display:block;
+      float:left;
+      position:relative;
+    }
+
+    &:hover {
+      .picture-item__title {
+        color:@color-aa-d-red;
+      }
+      .picture-item__tags {
+      }
+      .picture-item__details {
+        background-color:#0e0f0f !important;
+      }
+    }
+  }
+}

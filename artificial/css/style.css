@@ -1289,7 +1289,6 @@
 .hvr-fade:focus,
 .hvr-fade:active {
   background-color: #2098d1;
-  color: white;
 }
 /* Back Pulse */
 @-webkit-keyframes hvr-back-pulse {
@@ -5063,6 +5062,9 @@ section.rg-sc {
 }
 section.full-sc {
   height: inherit;
+}
+section.dk-grey-sc {
+  background-color: #111213;
 }
 section.med-grey-sc {
   background-color: #1d1e21;

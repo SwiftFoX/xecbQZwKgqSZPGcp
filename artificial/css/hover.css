@@ -1283,7 +1283,6 @@
 .hvr-fade:focus,
 .hvr-fade:active {
   background-color: #2098d1;
-  color: white;
 }
 /* Back Pulse */
 @-webkit-keyframes hvr-back-pulse {
