@@ -48,6 +48,7 @@
 #contact .selectpicker.btn-default {
   padding: 16px  !important;
   line-height: 16px !important;
+  height: 58px;
 }
 #contact .filter-option {
   font-size: 16px !important;
@@ -86,7 +87,7 @@
 #contact textarea:focus,
 #contact select:focus,
 #contact .selectpicker.btn-default:focus {
-  border-color: #fc6057;
+  border-color: #f43737;
   outline: 0 !important;
 }
 #contact textarea {

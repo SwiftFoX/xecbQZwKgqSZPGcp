@@ -4,23 +4,28 @@
 
 input[type="search"] {
   padding: 10px !important;
-  position:absolute;
   color:#606365 !important;
 }
 #filter-options {
-  padding: 30px 30px;
   background-color:#171819;
   margin-bottom: 30px;
+  padding:0 ;
+  position:relative;
+  width:100%;
+  .drop-shadow(0, 1px, 2px, 0.8);
 }
 select, .selectpicker.btn-default{
   padding: 13px  !important;
   line-height: 13px !important;
 }
 .option{
-  display:inline;
-  margin-right:20px;
+  display:inline-block;
+  padding: 20px 20px;
+  vertical-align: middle;
   label {
+    margin:0;
     margin-right:10px;
+    line-height:40px;
   }
 }
 input[type=text],input[type=search],
@@ -33,19 +38,20 @@ input[type=email], textarea, select, .selectpicker.btn-default {
   max-width:100%;
   box-shadow:none;
   height:40px !important;
-
+  color:#626262 !important;
   .trans(border 0.2s ease);
 
   &:hover, &:focus {
     border-color:@color-aa-d-red !important;
     outline: 0 !important;
+    background:transparent !important;
   }
 }
 #grid {
   figure {
-
     img {
       cursor:pointer;
+      .drop-shadow(0, 1px, 2px, 0.8);
     }
    .picture-item__title {
       color:#606365;
@@ -61,6 +67,8 @@ input[type=email], textarea, select, .selectpicker.btn-default {
      width:100%;
      .transition();
      line-height:24px;
+     .drop-shadow(0, 1px, 2px, 0.5);
+
    }
    .picture-item__tags {
      margin:0;

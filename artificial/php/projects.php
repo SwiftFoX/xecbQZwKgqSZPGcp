@@ -10,7 +10,7 @@
     </div>
     <img src="/artificial/images/abstract-green.jpg" style="height:1080px; margin-top:-25%;"></img>
   </section>
-  <section class="dk-grey-sc rg-sc">
+  <section id="projects-area" class="dk-grey-sc rg-sc">
     <div class="container">
       <section id="filter-options" class="med-grey-sc rg-sc">
         <div class="option">
@@ -75,28 +75,9 @@
         </figure>
       </div>
       <div class="shuffle-error"></div>
-      <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-          <div class="modal-content">
-            <div class="modal-header">
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-              <h4 class="modal-title" id="myModalLabel">Modal title</h4>
-            </div>
-            <div class="modal-body">
-              ...
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-              <button type="button" class="btn btn-primary">Save changes</button>
-            </div>
-          </div>
-        </div>
-      </div>
     </div>
   </section>
 </section>
-
-
 
 <script>
 $(document).ready(function() {
@@ -157,33 +138,35 @@ $(document).ready(function() {
   });
 
   $('#grid figure > img').on('click', function()  {
-    $('#myModal').modal('toggle');
+    var project = $(this).parents('figure').data('title');
+    window.location = "/artificial/project.php?project="+project;
   })
 
-  $('#grid figure figcaption').on('click', function()  {
-    $('#myModal').modal('toggle');
+  $('#grid figure figcaption').on('click', function(e)  {
+    var project = $(this).parents('figure').data('title');
+    window.location = "/artificial/project.php?project="+project;
   })
 
   // Sorting options
-$('.sort-options').on('change', function() {
-  var sort = this.value,
-      opts = {};
+  $('.sort-options').on('change', function() {
+    var sort = this.value,
+        opts = {};
 
-  // We're given the element wrapped in jQuery
-  if ( sort === 'date-created' ) {
-    opts = {
-      reverse: true,
-      by: function($el) {
-        return $el.data('date-created');
-      }
-    };
-  } else if ( sort === 'title' ) {
-    opts = {
-      by: function($el) {
-        return $el.data('title').toLowerCase();
-      }
-    };
-  }
+    // We're given the element wrapped in jQuery
+    if ( sort === 'date-created' ) {
+      opts = {
+        reverse: true,
+        by: function($el) {
+          return $el.data('date-created');
+        }
+      };
+    } else if ( sort === 'title' ) {
+      opts = {
+        by: function($el) {
+          return $el.data('title').toLowerCase();
+        }
+      };
+    }
 
     // Filter elements
     $grid.shuffle('sort', opts);
@@ -225,8 +208,9 @@ $('.sort-options').on('change', function() {
 
   $grid.on('layout.shuffle', function($el) {
     var error = $('.shuffle-error');
+    var errText = '<span class="glyphicon glyphicon-warning-sign" aria-hidden="true"></span>';
     if ($('#grid.row-fluid.shuffle > .filtered').length == 0 ) {
-      error.show().text('No Results');
+      error.show().html(errText + '&nbsp;Sorry, no results found in your criteria');
     }else {
       error.hide();
     }
