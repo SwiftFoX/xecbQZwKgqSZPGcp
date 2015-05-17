@@ -1,4 +1,4 @@
-test6
+test7
 
 <html lang="en">
 <?php require_once('head.php'); ?>
