@@ -13,23 +13,29 @@
   <section class="dk-grey-sc rg-sc">
     <div class="container">
       <section id="filter-options" class="med-grey-sc rg-sc">
-      Filter:
-      <div class="btn-group shuffle-filter" role="group" aria-label="...">
-        <button type="button" class="btn btn-default" data-filter="all">All</button>
-        <button type="button" class="btn btn-default" data-filter="web">Web</button>
-        <button type="button" class="btn btn-default" data-filter="motion">Motion</button>
-        <button type="button" class="btn btn-default" data-filter="graphics">Graphics</button>
-        <button type="button" class="btn btn-default" data-filter="logo">Logos</button>
-      </div>
-      Sort:
-      <select class="sort-options">
-        <option value="">Default</option>
-        <option value="title">Title</option>
-        <option value="date-created">Date Created</option>
-      </select>
-      Search:
-      <input type="search" class="js-shuffle-search" placeholder="search..."/>
-    </section>
+        <div class="option">
+          <label for="filter">Filter:</label>
+          <div id="filter" name="filter" class="btn-group shuffle-filter" role="group" aria-label="...">
+            <button type="button" class="btn btn-default" data-filter="all">All</button>
+            <button type="button" class="btn btn-default" data-filter="web">Web</button>
+            <button type="button" class="btn btn-default" data-filter="motion">Motion</button>
+            <button type="button" class="btn btn-default" data-filter="graphics">Graphics</button>
+            <button type="button" class="btn btn-default" data-filter="logo">Logos</button>
+          </div>
+        </div>
+        <div class="option">
+          <label for="sort">Sort:</label>
+          <select name="sort" id="sort" class="selectpicker sort-options">
+            <option value="">Default</option>
+            <option value="title">Title</option>
+            <option value="date-created">Date Created</option>
+          </select>
+        </div>
+        <div class="option">
+          <label for="search">Search:</label>
+          <input id="search" type="search" autocomplete="off" name="search" class="js-shuffle-search" placeholder="search..."/>
+        </div>
+      </section>
       <div id="grid" class="row-fluid">
         <figure class="span3 picture-item" data-groups='["motion"]' data-date-created="2010-09-14" data-title="Baseball">
           <img src="/artificial/images/abstract-green.jpg" height="145" width="250" />
@@ -94,6 +100,9 @@
 
 <script>
 $(document).ready(function() {
+
+  $('.selectpicker').selectpicker();
+
   var $grid = $('#grid'),
       $sizer = $grid.find('.shuffle__sizer');
 
@@ -197,7 +206,8 @@ $('.sort-options').on('change', function() {
   $('.shuffle-filter > button').on('click', function() {
 
     var val = $(this).data('filter').toLowerCase();
-
+    $('.shuffle-filter > button').removeClass('active');
+    $(this).addClass('active');
     $grid.shuffle('shuffle', function($el, shuffle) {
       // Only search elements in the current group
 

@@ -4,15 +4,44 @@
 
 input[type="search"] {
   padding: 10px !important;
+  position:absolute;
+  color:#606365 !important;
 }
 #filter-options {
   padding: 30px 30px;
   background-color:#171819;
   margin-bottom: 30px;
 }
+select, .selectpicker.btn-default{
+  padding: 13px  !important;
+  line-height: 13px !important;
+}
+.option{
+  display:inline;
+  margin-right:20px;
+  label {
+    margin-right:10px;
+  }
+}
+input[type=text],input[type=search],
+input[type=email], textarea, select, .selectpicker.btn-default {
+  border: 1px solid #494949 !important;
+  background:transparent !important;
+  border-radius: 0 !important;
+  font-size:16px !important;
+  text-shadow:none;
+  max-width:100%;
+  box-shadow:none;
+  height:40px !important;
+
+  .trans(border 0.2s ease);
+
+  &:hover, &:focus {
+    border-color:@color-aa-d-red !important;
+    outline: 0 !important;
+  }
+}
 #grid {
-
-
   figure {
 
     img {
