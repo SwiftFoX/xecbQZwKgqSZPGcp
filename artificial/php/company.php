@@ -1,3 +1,4 @@
+<!--RON SUCKS DONKEY DICK -->
 <link rel="stylesheet" href="/artificial/css/company.css">
 <script src="/artificial/js/jquery.circlemouse.js"></script>
 <section id="company" class="hdr-sc">
