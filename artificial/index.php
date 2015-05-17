@@ -1,5 +1,3 @@
-test
-
 <html lang="en">
 <?php require_once('head.php'); ?>
 <body>
