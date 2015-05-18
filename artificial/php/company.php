@@ -1,11 +1,11 @@
-<link rel="stylesheet" href="/artificial/css/company.css">
-<script src="/artificial/js/jquery.circlemouse.js"></script>
+<link rel="stylesheet" href="./css/company.css">
+<script src="./js/jquery.circlemouse.js"></script>
 <section id="company" class="hdr-sc">
   <section class="img-hdr">
     <div class="container">
       <h2>COMPANY</h2>
     </div>
-    <img src="/artificial/images/abstract-1.jpg" style="height:1080px; margin-top:-34%;"></img>
+    <img src="./images/abstract-1.jpg" style="height:1080px; margin-top:-34%;"></img>
   </section>
   <section class="med-lt-grey-sc rg-sc title-sc">
     <div class="container quote">
@@ -30,7 +30,7 @@
           <strong>Dayan Balevski</strong>
         	<p>Graphic Designer &amp; Web Developer</p>
           <div class="member-circle">
-            <img src="/artificial/images/me.jpg" alt="Dayan Balevski - Graphic Designer &amp; Web Developer">
+            <img src="./images/me.jpg" alt="Dayan Balevski - Graphic Designer &amp; Web Developer">
             <div class="inner-circle"></div>
             <div class="social-circles">
               <a class="soc-circle fb-circle" href="https://www.facebook.com/dayan.balevski"
@@ -49,7 +49,7 @@
           <strong>Ronald Griffin</strong>
         	<p>Motion Graphics Designer</p>
           <div class="member-circle">
-            <img src="/artificial/images/me.jpg" alt="Dayan Balevski - Graphic Designer &amp; Web Developer">
+            <img src="./images/me.jpg" alt="Dayan Balevski - Graphic Designer &amp; Web Developer">
             <div class="inner-circle"></div>
             <div class="social-circles">
               <a class="soc-circle fb-circle" href="https://www.facebook.com/dayan.balevski"
@@ -68,7 +68,7 @@
           <strong>John Rowley</strong>
         	<p>System Administrator</p>
           <div class="member-circle">
-            <img src="/artificial/images/me.jpg" alt="Dayan Balevski - Graphic Designer &amp; Web Developer">
+            <img src="./images/me.jpg" alt="Dayan Balevski - Graphic Designer &amp; Web Developer">
             <div class="inner-circle"></div>
             <div class="social-circles">
               <a class="soc-circle fb-circle" href="https://www.facebook.com/dayan.balevski"

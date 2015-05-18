@@ -47,7 +47,7 @@ $(function(){
   <div class="container">
     <div class="port-bar-content">
         <span class="mission">Lorem ipsum dolor sit amet, consectetur adipiscing elit.  Sed fringilla felis ut turpis ullamcorper euismod.</span>
-        <a class="generic-btn hvr-rectangle-out" style="margin-left:20px" href="/artificial/projects.php">VIEW OUR WORK</a>
+        <a class="generic-btn hvr-rectangle-out" style="margin-left:20px" href="./projects.php">VIEW OUR WORK</a>
     </div>
   </div>
 </section>

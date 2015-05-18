@@ -1,5 +1,5 @@
-<script src="/artificial/js/Shuffle-3.0.0/dist/jquery.shuffle.modernizr.min.js" type="text/javascript"></script>
-<link rel="stylesheet" href="/artificial/css/project.css">
+<script src="./js/Shuffle-3.0.0/dist/jquery.shuffle.modernizr.min.js" type="text/javascript"></script>
+<link rel="stylesheet" href="./css/project.css">
 
 <section id="projects" class="hdr-sc">
   <div class="container">
@@ -8,7 +8,7 @@
     <div class="container">
       <h2>PROJECTS</h2>
     </div>
-    <img src="/artificial/images/abstract-green.jpg" style="height:1080px; margin-top:-25%;"></img>
+    <img src="./images/abstract-green.jpg" style="height:1080px; margin-top:-25%;"></img>
   </section>
   <section id="projects-area" class="dk-grey-sc rg-sc">
     <div class="container">
@@ -38,7 +38,7 @@
       </section>
       <div id="grid" class="row-fluid">
         <figure class="span3 picture-item" data-groups='["motion"]' data-date-created="2010-09-14" data-title="Baseball">
-          <img src="/artificial/images/abstract-green.jpg" height="145" width="250" />
+          <img src="./images/abstract-green.jpg" height="145" width="250" />
           <div class="picture-item__details clearfix">
             <figcaption class="picture-item__title pull-left">Baseball</figcaption>
             <p class="picture-item__tags pull-right">motion</p>
@@ -46,28 +46,28 @@
         </figure>
         <div class="spacer"></div>
         <figure class="span6 picture-item" data-groups='["web","motion"]' data-date-created="2015-09-14" data-title="KBaseball">
-          <img src="/artificial/images/abstract-green.jpg" height="145" width="250" />
+          <img src="./images/abstract-green.jpg" height="145" width="250" />
           <div class="picture-item__details clearfix">
             <figcaption class="picture-item__title pull-left">Tennis</figcaption>
             <p class="picture-item__tags pull-right">web, motion</p>
           </div>
         </figure>
         <figure class="span3 picture-item" data-groups='["logo","graphics"]' data-date-created="2013-09-14" data-title="ABaseball">
-          <img src="/artificial/images/abstract-green.jpg" height="145" width="250" />
+          <img src="./images/abstract-green.jpg" height="145" width="250" />
           <div class="picture-item__details clearfix">
             <figcaption class="picture-item__title pull-left">iMac</figcaption>
             <p class="picture-item__tags pull-right">logo, graphics</p>
           </div>
         </figure>
         <figure class="span3 picture-item" data-groups='["web","logo"]' data-date-created="2010-09-14" data-title="lBaseball">
-          <img src="/artificial/images/abstract-green.jpg" height="145" width="250" />
+          <img src="./images/abstract-green.jpg" height="145" width="250" />
           <div class="picture-item__details clearfix">
             <figcaption class="picture-item__title pull-left">iMa2c</figcaption>
             <p class="picture-item__tags pull-right">web, logo</p>
           </div>
         </figure>
         <figure class="span3 picture-item picture-item--h2" data-groups='["graphics"]' data-date-created="2009-09-14" data-title="RBaseball">
-          <img src="/artificial/images/abstract-green.jpg" height="145" width="250" />
+          <img src="./images/abstract-green.jpg" height="145" width="250" />
           <div class="picture-item__details clearfix">
             <figcaption class="picture-item__title pull-left">Master Chief</figcaption>
             <p class="picture-item__tags pull-right">graphics</p>
@@ -139,12 +139,12 @@ $(document).ready(function() {
 
   $('#grid figure > img').on('click', function()  {
     var project = $(this).parents('figure').data('title');
-    window.location = "/artificial/project.php?project="+project;
+    window.location = "./project.php?project="+project;
   })
 
   $('#grid figure figcaption').on('click', function(e)  {
     var project = $(this).parents('figure').data('title');
-    window.location = "/artificial/project.php?project="+project;
+    window.location = "./project.php?project="+project;
   })
 
   // Sorting options
