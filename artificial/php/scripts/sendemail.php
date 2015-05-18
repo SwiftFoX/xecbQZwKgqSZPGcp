@@ -103,6 +103,9 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
 
 		if (mail($yourEmail,$subject,$message,$headers)) {
 			if (!empty($thanksPage)) {
+        $result = 'Your mail was successfully sent.';
+
+
       //  $error_msg = '';
       //  $error_msg[] = 'SENT SUCCESSFULLY';
 			//	header("Location: $thanksPage");
