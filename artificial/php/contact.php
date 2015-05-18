@@ -8,7 +8,7 @@
         	echo '<p class="error">ERROR: '. implode("<br />", $error_msg) . "</p>";
         }
         if ($result != NULL) {
-        	echo '<p class="success">'. $result . "</p>";
+        	echo '<p class="bg-success">'. $result . "</p>";
         }
       ?>
     </div>
@@ -19,14 +19,16 @@
       </noscript>
       <h3>Send us an email!</h3>
       <div style="height: 30px;" class="divider"></div>
-      <span class="form-group required">
+      <span class="form-group has-feedback required">
         <label for="name" class="control-label">Fullname</label>
         <input type="text" autocomplete="on" required name="name" id="name"/>
+        <span class="glyphicon form-control-feedback" aria-hidden="true"></span>
         <div class="help-block with-errors"></div>
       </span>
-      <span class="form-group required">
+      <span class="form-group has-feedback required">
         <label for="email" class="control-label">Email</label>
         <input type="email"  autocomplete="on" required name="email" id="email"/>
+        <span class="glyphicon form-control-feedback" aria-hidden="true"></span>
         <div class="help-block with-errors"></div>
       </span>
       <span class="form-group">
@@ -39,23 +41,27 @@
       </span>
       <span id="collapseBudget" class="collapse form-group required">
         <label for="subject" class="control-label">Budget</label>
-        <select  name="budget" required id="budget" data-budget="2" class="selectpicker required">
-          <option value="">Select your budget</option>
-          <option value="350">$350-750 USD</option>
-          <option value="750">$750-1500 USD</option>
-          <option value="1500">$1500-3000 USD</option>
-          <option value="3000">$3000+ USD</option>
-        </select>
-        <div class="help-block with-errors"></div>
+        <span class="form-group has-feedback required" style="margin:0">
+          <select  name="budget" required id="budget" data-budget="2" class="selectpicker required">
+            <option value="">Select your budget</option>
+            <option value="350">$350-750 USD</option>
+            <option value="750">$750-1500 USD</option>
+            <option value="1500">$1500-3000 USD</option>
+            <option value="3000">$3000+ USD</option>
+          </select>
+          <div class="help-block with-errors"></div>
+        </span>
       </span>
-      <span class="form-group required">
+      <span class="form-group has-feedback required">
         <label for="subject" class="control-label">Subject</label>
         <input  type="text" autocomplete="off" required name="subject" id="subject"/>
+        <span class="glyphicon form-control-feedback" aria-hidden="true"></span>
         <div class="help-block with-errors"></div>
       </span>
-      <span class="form-group required">
+      <span class="form-group has-feedback required">
         <label for="comments" class="control-label">Message</label>
         <textarea name="comments" autocomplete="off" required id="comments"></textarea>
+        <span class="glyphicon form-control-feedback" aria-hidden="true"></span>
         <div class="help-block with-errors"></div>
       </span>
       <div style="height: 20px;" class="divider"></div>

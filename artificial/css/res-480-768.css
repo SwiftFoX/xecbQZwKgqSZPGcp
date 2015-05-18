@@ -3,14 +3,13 @@ body,
 .wrap,
 main,
 footer {
-  width: 768px;
-  min-width: 768px;
+  max-width: 768px;
 }
 main {
   padding-bottom: 272px;
 }
 #full-width-banner {
-  max-width: 768px !important;
+  max-width: 768px;
   min-width: 550px;
   max-height: 400px;
 }
@@ -24,11 +23,11 @@ main {
   top: 180px;
 }
 #portfolio-bar {
-  overflow: hidden !important;
+  overflow: hidden;
 }
 #portfolio-bar .mission {
   max-width: 540px;
 }
 .container {
-  width: 748px !important;
+  max-width: 748px;
 }

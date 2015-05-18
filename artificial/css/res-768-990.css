@@ -3,12 +3,11 @@ body,
 .wrap,
 main,
 footer {
-  width: 990px;
-  min-width: 990px;
+  max-width: 990px;
 }
 #full-width-banner {
-  min-width: 990px;
+  max-width: 990px;
 }
 .container {
-  width: 970px !important;
+  max-width: 970px;
 }

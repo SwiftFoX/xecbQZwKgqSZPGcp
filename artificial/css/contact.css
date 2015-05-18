@@ -93,3 +93,6 @@
 #contact textarea {
   height: 180px !important;
 }
+#contact .has-success label {
+  color: #898989 !important;
+}

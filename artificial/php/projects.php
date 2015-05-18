@@ -2,8 +2,6 @@
 <link rel="stylesheet" href="./css/project.css">
 
 <section id="projects" class="hdr-sc">
-  <div class="container">
-  </div>
   <section class="img-hdr">
     <div class="container">
       <h2>PROJECTS</h2>

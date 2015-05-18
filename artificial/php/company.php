@@ -30,7 +30,7 @@
           <strong>Dayan Balevski</strong>
         	<p>Graphic Designer &amp; Web Developer</p>
           <div class="member-circle">
-            <img src="./images/me.jpg" alt="Dayan Balevski - Graphic Designer &amp; Web Developer">
+            <img class="img-responsive" src="./images/me.jpg" alt="Dayan Balevski - Graphic Designer &amp; Web Developer">
             <div class="inner-circle"></div>
             <div class="social-circles">
               <a class="soc-circle fb-circle" href="https://www.facebook.com/dayan.balevski"
@@ -49,7 +49,7 @@
           <strong>Ronald Griffin</strong>
         	<p>Motion Graphics Designer</p>
           <div class="member-circle">
-            <img src="./images/me.jpg" alt="Dayan Balevski - Graphic Designer &amp; Web Developer">
+            <img class="img-responsive" src="./images/me.jpg" alt="Dayan Balevski - Graphic Designer &amp; Web Developer">
             <div class="inner-circle"></div>
             <div class="social-circles">
               <a class="soc-circle fb-circle" href="https://www.facebook.com/dayan.balevski"
@@ -68,7 +68,7 @@
           <strong>John Rowley</strong>
         	<p>System Administrator</p>
           <div class="member-circle">
-            <img src="./images/me.jpg" alt="Dayan Balevski - Graphic Designer &amp; Web Developer">
+            <img class="img-responsive" src="./images/me.jpg" alt="Dayan Balevski - Graphic Designer &amp; Web Developer">
             <div class="inner-circle"></div>
             <div class="social-circles">
               <a class="soc-circle fb-circle" href="https://www.facebook.com/dayan.balevski"

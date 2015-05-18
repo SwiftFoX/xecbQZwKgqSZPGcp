@@ -1,11 +1,11 @@
 <header>
   <div id="topbar">
     <div class="container">
-      <div id="network">
+      <!--<div id="network">
         <ul id="network">
-          <li><a href="#">MAIN SITE</a>
+          <li><a href="/artificial/index.php">MAIN SITE</a>
         </ul>
-      </div>
+      </div>-->
       <div id="login" class="dropdown">
         <a id="login-btn" data-target="#" href="http://example.com" data-toggle="dropdown"
                 aria-haspopup="true" role="button" aria-expanded="false">
@@ -29,7 +29,7 @@
   </div>
   <div id="header" class="transparent">
     <div class="container">
-      <div id="logo"><a href="#"><img src="/artificial/images/logo.png"/></a></div>
+      <div id="logo"><a href="/artificial/index.php"><img src="/artificial/images/logo.png"/></a></div>
       <nav>
         <li class="nav-item" id="home"><a class="nav-link" href="/artificial/index.php">HOME</a></li>
         <li class="nav-item"><a class="nav-link" href="/artificial/projects.php">PROJECTS</a></li>
@@ -49,10 +49,6 @@
             <li role="presentation"><a role="menuitem" href="/artificial/services/graphic.php">
               <span class="service-icon"><img src="/artificial/images/icons/graphics.png"></span>
               Graphic Design</a></li>
-            <li role="presentation" class="divider2"></li>
-            <li role="presentation"><a role="menuitem" href="/artificial/services/audio.php">
-              <span class="service-icon"><img src="/artificial/images/icons/audio.png"></span>
-              Audio Development</a></li>
           </ul>
         </li>
         <li class="nav-item"><a class="nav-link" href="/artificial/company.php">COMPANY</a></li>
