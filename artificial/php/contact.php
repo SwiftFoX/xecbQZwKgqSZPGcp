@@ -1,13 +1,27 @@
+<?php require('/scripts/sendemail.php'); ?>
 <link rel="stylesheet" href="css/contact.css">
 <section id="contact" class="hdr-sc rg-sc">
   <div class="container">
+    <div class="error-log">
+      <?php
+        if (!empty($error_msg)) {
+        	echo '<p class="error">ERROR: '. implode("<br />", $error_msg) . "</p>";
+        }
+        if ($result != NULL) {
+        	echo '<p class="success">'. $result . "</p>";
+        }
+      ?>
+    </div>
     <form id="contact-form" role="form"
-      class="frm-lt-50" method="GET" action="./php/scripts/send-message.php">
+      class="frm-lt-50" method="POST" action="<?php echo basename(__FILE__); ?>">
+      <noscript>
+      		<p><input type="hidden" name="nojs" id="nojs" /></p>
+      </noscript>
       <h3>Send us an email!</h3>
       <div style="height: 30px;" class="divider"></div>
       <span class="form-group required">
-        <label for="fullname" class="control-label">Fullname</label>
-        <input type="text" autocomplete="off" required name="fullname" id="fullname"/>
+        <label for="name" class="control-label">Fullname</label>
+        <input type="text" autocomplete="off" required name="name" id="name"/>
         <div class="help-block with-errors"></div>
       </span>
       <span class="form-group required">
@@ -40,13 +54,14 @@
         <div class="help-block with-errors"></div>
       </span>
       <span class="form-group required">
-        <label for="message" class="control-label">Message</label>
-        <textarea name="message"  autocomplete="off" required id="subject"></textarea>
+        <label for="comments" class="control-label">Message</label>
+        <textarea name="comments" autocomplete="off" required id="comments"></textarea>
         <div class="help-block with-errors"></div>
       </span>
       <div style="height: 20px;" class="divider"></div>
       <span class="form-group">
-        <button type="submit" id="send" form="contact-form" class="generic-btn hvr-rectangle-out" name="submit" value="send">Send</button>
+        <button type="submit" id="send" form="contact-form" class="generic-btn hvr-rectangle-out" name="submit" value="send"
+        <?php if (isset($disable) && $disable === true) echo ' disabled="disabled"'; ?>>Send</button>
       </span>
     </form>
     <div class="frm-rt-50">
