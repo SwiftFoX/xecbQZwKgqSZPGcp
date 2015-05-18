@@ -1,5 +1,5 @@
-<?php require('/scripts/sendemail.php'); ?>
-<link rel="stylesheet" href="css/contact.css">
+<link rel="stylesheet" href="/artificial/css/contact.css">
+<?php require('./php/scripts/sendemail.php'); ?>
 <section id="contact" class="hdr-sc rg-sc">
   <div class="container">
     <div class="error-log">
@@ -21,12 +21,12 @@
       <div style="height: 30px;" class="divider"></div>
       <span class="form-group required">
         <label for="name" class="control-label">Fullname</label>
-        <input type="text" autocomplete="off" required name="name" id="name"/>
+        <input type="text" autocomplete="on" required name="name" id="name"/>
         <div class="help-block with-errors"></div>
       </span>
       <span class="form-group required">
         <label for="email" class="control-label">Email</label>
-        <input type="email"  autocomplete="off" required name="email" id="email"/>
+        <input type="email"  autocomplete="on" required name="email" id="email"/>
         <div class="help-block with-errors"></div>
       </span>
       <span class="form-group">

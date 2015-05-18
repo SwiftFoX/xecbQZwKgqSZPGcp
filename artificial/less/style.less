@@ -10,6 +10,15 @@ body {
   position:relative;
   background-color: #131517 !important;
 }
+input:-webkit-autofill {
+    -webkit-box-shadow:0 0 0 50px #131517 inset !important; /* Change the color to your own background color */
+    -webkit-text-fill-color: #898989 !important;
+}
+
+input:-webkit-autofill:focus {
+    -webkit-box-shadow: 0 0 0 50px #131517 inset !important;
+    -webkit-text-fill-color: #898989 !important;
+}
 ::selection {
   background: @color-aa-l-red; /* WebKit/Blink Browsers */
   color:white;
@@ -163,8 +172,8 @@ label.checkbox-label span
   input[type=text], textarea, input[type=email], input[type=password], input[type=tel], input[type=url], input[type=search], input[type=date] {
     background-color: transparent!important;
     border: 1px solid #ccc;
-    box-shadow: none!important;
-    -webkit-box-shadow: none!important;
+    box-shadow: none;
+    -webkit-box-shadow: none;
     font-size: 16px;
     -o-box-shadow: none!important;
     padding: 16px;
@@ -474,7 +483,7 @@ section.img-hdr {
           color: #d9d9d9;
           padding:15px 20px !important;
 
-          &:hover, &:focus {background:#454545;}
+          &:hover, &:active, &:focus {background:#454545 !important;}
         }
       }
     }
@@ -782,7 +791,10 @@ footer {
       overflow: hidden;
       background-color: #e5e5e5;
     }
+    li a {
+      &:hover, &:focus {background-color :#454545 !important;}
 
+    }
     &.arrow
     {
       &.pull-right {
@@ -866,6 +878,11 @@ footer {
   background-color: #373737 !important;
   border-radius: 0 !important;
   border: none !important;
+
+  li a{
+    &:hover, &:focus {background-color:#454545 !important; }
+
+  }
   .selected a{
     .inner-shadow(0, 1px, 2px, 0.4);
     background:#292929  !important;

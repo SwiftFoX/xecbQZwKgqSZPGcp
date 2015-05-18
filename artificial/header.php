@@ -29,34 +29,34 @@
   </div>
   <div id="header" class="transparent">
     <div class="container">
-      <div id="logo"><a href="#"><img src="./images/logo.png"/></a></div>
+      <div id="logo"><a href="#"><img src="/artificial/images/logo.png"/></a></div>
       <nav>
-        <li class="nav-item" id="home"><a class="nav-link" href="./index.php">HOME</a></li>
-        <li class="nav-item"><a class="nav-link" href="./projects.php">PROJECTS</a></li>
+        <li class="nav-item" id="home"><a class="nav-link" href="/artificial/index.php">HOME</a></li>
+        <li class="nav-item"><a class="nav-link" href="/artificial/projects.php">PROJECTS</a></li>
         <li class='nav-item dropdown'>
           <button class="nav-link" onSubmit="return false;" data-target="#" data-toggle="dropdown"
                 data-hover="dropdown" data-delay="1000" data-close-others="false"
                 aria-haspopup="true" role="button" aria-expanded="false">SERVICES&nbsp;<span class="caret"></span></button>
           <ul class="dropdown-menu pull-right arrow" role="menu" aria-labelledby="dLabel">
-            <li role="presentation"><a role="menuitem" href="./services/webdev.php">
-              <span class="service-icon"><img src="./images/icons/web.png"></span>
+            <li role="presentation"><a role="menuitem" href="/artificial/services/webdev.php">
+              <span class="service-icon"><img src="/artificial/images/icons/web.png"></span>
               Web Development</a></li>
             <li role="presentation" class="divider2"></li>
-            <li role="presentation"><a role="menuitem" href="./services/motion.php">
-              <span class="service-icon"><img src="./images/icons/motion.png"></span>
+            <li role="presentation"><a role="menuitem" href="/artificial/services/motion.php">
+              <span class="service-icon"><img src="/artificial/images/icons/motion.png"></span>
               Motion Graphics</a></li>
             <li role="presentation" class="divider2"></li>
-            <li role="presentation"><a role="menuitem" href="./services/graphic.php">
-              <span class="service-icon"><img src="./images/icons/graphics.png"></span>
+            <li role="presentation"><a role="menuitem" href="/artificial/services/graphic.php">
+              <span class="service-icon"><img src="/artificial/images/icons/graphics.png"></span>
               Graphic Design</a></li>
             <li role="presentation" class="divider2"></li>
-            <li role="presentation"><a role="menuitem" href="./services/audio.php">
-              <span class="service-icon"><img src="./images/icons/audio.png"></span>
+            <li role="presentation"><a role="menuitem" href="/artificial/services/audio.php">
+              <span class="service-icon"><img src="/artificial/images/icons/audio.png"></span>
               Audio Development</a></li>
           </ul>
         </li>
-        <li class="nav-item"><a class="nav-link" href="./company.php">COMPANY</a></li>
-        <li class="nav-item"><a class="nav-link" href="./contact.php">CONTACT</a></li>
+        <li class="nav-item"><a class="nav-link" href="/artificial/company.php">COMPANY</a></li>
+        <li class="nav-item"><a class="nav-link" href="/artificial/contact.php">CONTACT</a></li>
       </nav>
     </div>
   </div>

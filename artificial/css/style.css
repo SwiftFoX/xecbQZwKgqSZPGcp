@@ -4811,6 +4811,15 @@ body {
   position: relative;
   background-color: #131517 !important;
 }
+input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0 50px #131517 inset !important;
+  /* Change the color to your own background color */
+  -webkit-text-fill-color: #898989 !important;
+}
+input:-webkit-autofill:focus {
+  -webkit-box-shadow: 0 0 0 50px #131517 inset !important;
+  -webkit-text-fill-color: #898989 !important;
+}
 ::selection {
   background: #ff9898;
   /* WebKit/Blink Browsers */
@@ -5034,8 +5043,8 @@ label.checkbox-label span:hover {
 .container input[type=date] {
   background-color: transparent!important;
   border: 1px solid #ccc;
-  box-shadow: none!important;
-  -webkit-box-shadow: none!important;
+  box-shadow: none;
+  -webkit-box-shadow: none;
   font-size: 16px;
   -o-box-shadow: none!important;
   padding: 16px;
@@ -5363,8 +5372,9 @@ section.img-hdr img {
   padding: 15px 20px !important;
 }
 #header nav .dropdown.open .dropdown-menu li a:hover,
+#header nav .dropdown.open .dropdown-menu li a:active,
 #header nav .dropdown.open .dropdown-menu li a:focus {
-  background: #454545;
+  background: #454545 !important;
 }
 #header nav li.nav-item {
   float: left;
@@ -5672,6 +5682,10 @@ footer .footer-content b {
   overflow: hidden;
   background-color: #e5e5e5;
 }
+.dropdown .dropdown-menu li a:hover,
+.dropdown .dropdown-menu li a:focus {
+  background-color: #454545 !important;
+}
 .dropdown .dropdown-menu.arrow.pull-right:before {
   right: 9px;
 }
@@ -5748,6 +5762,10 @@ footer .footer-content b {
   background-color: #373737 !important;
   border-radius: 0 !important;
   border: none !important;
+}
+.dropdown-menu li a:hover,
+.dropdown-menu li a:focus {
+  background-color: #454545 !important;
 }
 .dropdown-menu .selected a {
   -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.4);
