@@ -10,6 +10,7 @@
       <div class="carousel-caption">
         <h3>Lorem ipsum dolor sit amet</h3>
         <p>fringilla felis ut turpis ullamcorp</p>
+        <a class="generic-btn hvr-rectangle-out" href="/artificial/projects.php">VIEW PROJECT</a> 
       </div>
     </div>
     <div class="item">
@@ -17,13 +18,15 @@
       <div class="carousel-caption">
         <h3>Lorem ipsum dolor sit amet</h3>
         <p>fringilla felis ut turpis ullamcorp</p>
+        <a class="generic-btn hvr-rectangle-out" href="/artificial/projects.php">VIEW PROJECT</a>
       </div>
     </div>
     <div class="item">
-      <img src="images/abstract-2.jpg" style=""/>
+      <img src="images/projects/room-39/banner-1920x1080.png" style=""/>
       <div class="carousel-caption">
-        <h3>Lorem ipsum dolor sit amet</h3>
-        <p>fringilla felis ut turpis ullamcorp</p>
+        <h3>PROJECT: ROOM-39</h3>
+        <p>Credit sequence for a game related project</p>
+        <a class="generic-btn hvr-rectangle-out" href="/artificial/projects.php">VIEW PROJECT</a>
       </div>
     </div>
   </div>

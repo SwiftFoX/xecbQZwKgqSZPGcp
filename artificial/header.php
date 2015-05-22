@@ -7,19 +7,33 @@
         </ul>
       </div>-->
       <div id="login" class="dropdown">
-        <a id="login-btn" data-target="#" href="http://example.com" data-toggle="dropdown"
+        <button id="login-btn" data-toggle="dropdown"
                 aria-haspopup="true" role="button" aria-expanded="false">
           CLIENT LOGIN&nbsp;
           <span class="caret"></span>
-        </a>
+        </button>
         <ul class="dropdown-menu pull-right arrow" role="menu" aria-labelledby="dLabel">
-          <li role="presentation">
-            <form id="client-login-form" action="#" method="POST">
-              <input type="text"/>
-              <input type="text"/>
-              <input type="submit" value="Sign in" />
-            </form>
-          </li>
+          <form id="client-login-form" role="form" action="#" method="POST">
+            <noscript>
+            		<p><input type="hidden" name="nojs" id="nojs" /></p>
+            </noscript>
+            <span class="form-group has-feedback required">
+              <input type="text" placeholder="Email" autocomplete="off" required name="email" id="email"/>
+              <span class="glyphicon form-control-feedback" aria-hidden="true"></span>
+              <div class="help-block with-errors"></div>
+            </span>
+            <span class="form-group has-feedback required">
+              <input type="password" placeholder="Password" autocomplete="off" required name="password" id="password"/>
+              <span class="glyphicon form-control-feedback" aria-hidden="true"></span>
+              <div class="help-block with-errors"></div>
+            </span>
+            <span class="form-group">
+              <button type="submit" id="submit"
+                      form="client-login-form" class="generic-btn hvr-rectangle-out"
+                      name="submit" value="send">Login</button>
+            </span>
+          </form>
+          <li role="presentation" class="divider"></li>
           <li role="presentation"><a role="menuitem" href="#">Forgot Password</a></li>
           <li role="presentation" class="divider"></li>
           <li role="presentation"><a role="menuitem" href="#">Register Client Account</a></li>
@@ -41,11 +55,11 @@
             <li role="presentation"><a role="menuitem" href="/artificial/services/webdev.php">
               <span class="service-icon"><img src="/artificial/images/icons/web.png"></span>
               Web Development</a></li>
-            <li role="presentation" class="divider2"></li>
+            <li role="presentation" class="divider"></li>
             <li role="presentation"><a role="menuitem" href="/artificial/services/motion.php">
               <span class="service-icon"><img src="/artificial/images/icons/motion.png"></span>
               Motion Graphics</a></li>
-            <li role="presentation" class="divider2"></li>
+            <li role="presentation" class="divider"></li>
             <li role="presentation"><a role="menuitem" href="/artificial/services/graphic.php">
               <span class="service-icon"><img src="/artificial/images/icons/graphics.png"></span>
               Graphic Design</a></li>
