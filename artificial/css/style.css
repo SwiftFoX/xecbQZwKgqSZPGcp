@@ -5566,6 +5566,12 @@ section.img-hdr img {
 #services .service-tab:hover .service-title {
   color: #f43737 !important;
 }
+.footer-red-line {
+  display: inline-block;
+  width: 100%;
+  height: 2px;
+  background: #f43737;
+}
 footer {
   background: #1d1e21 !important;
   -ms-box-sizing: border-box;
@@ -5609,7 +5615,7 @@ footer .footer-content .row {
   margin-left: 0;
 }
 footer .footer-content .foot-contact li {
-  margin-bottom: 10px;
+  margin-bottom: 6px;
   vertical-align: middle;
 }
 footer .footer-content .foot-contact .foot-list i {
@@ -5640,6 +5646,7 @@ footer .footer-content .foot-list {
   padding: 0;
   margin-top: 5px;
   font-size: 14px;
+  line-height: 20px;
 }
 footer .footer-content .foot-list .foot-list-col {
   display: inline-block;
@@ -5658,9 +5665,9 @@ footer .footer-content p {
   -o-backface-visibility: hidden;
   backface-visibility: hidden;
   font-size: 14px;
-  line-height: 16px;
-  margin-bottom: 15px;
-  displaY: block;
+  line-height: 20px;
+  margin-bottom: 10px;
+  display: block;
 }
 footer .footer-content a a:hover,
 footer .footer-content p a:hover {
