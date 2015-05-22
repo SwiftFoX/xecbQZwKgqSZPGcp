@@ -5514,42 +5514,16 @@ section.img-hdr img {
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   -moz-osx-font-smoothing: grayscale;
-  position: relative ;
-  background: #e1e1e1;
-  -webkit-transition-property: color;
-  transition-property: color;
+  overflow: hidden;
   -webkit-transition-duration: 0.3s;
   transition-duration: 0.3s;
-}
-#services .service-tab:before {
-  content: "";
-  position: absolute ;
-  z-index: -1;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: #2098d1;
-  -webkit-transform: scale(0);
-  transform: scale(0);
-  -webkit-transition-property: transform;
-  transition-property: transform;
-  -webkit-transition-duration: 0.3s;
-  transition-duration: 0.3s;
-  -webkit-transition-timing-function: ease-out;
-  transition-timing-function: ease-out;
+  -webkit-transition-property: color, background-color;
+  transition-property: color, background-color;
 }
 #services .service-tab:hover,
 #services .service-tab:focus,
 #services .service-tab:active {
-  color: white !important;
-  border-color: #2098d1;
-}
-#services .service-tab:hover:before,
-#services .service-tab:focus:before,
-#services .service-tab:active:before {
-  -webkit-transform: scale(1);
-  transform: scale(1);
+  background-color: #2098d1;
 }
 #services .service-tab:before {
   background: #1d1e21 !important;
@@ -5586,6 +5560,9 @@ section.img-hdr img {
   height: 100%;
   z-index: 2;
 }
+#services .service-tab:hover {
+  background: #1d1e21 !important;
+}
 #services .service-tab:hover .service-title {
   color: #f43737 !important;
 }
@@ -5614,7 +5591,7 @@ footer .footer-content .copyright {
 }
 footer .footer-content .col {
   display: table-cell;
-  width: calc(33.33333333%);
+  width: calc(-21.66666667%);
   height: 100% !important;
   padding: 0 30px 0 30px;
   text-align: left;
@@ -5682,7 +5659,7 @@ footer .footer-content p {
   backface-visibility: hidden;
   font-size: 14px;
   line-height: 16px;
-  margin-bottom: 8px;
+  margin-bottom: 15px;
   displaY: block;
 }
 footer .footer-content a a:hover,

@@ -9,8 +9,6 @@
         </a>
       </div>
     </div>
-    </div>
-    <div class="row">
     <div class="col  foot-contact">
       <div class="foot-col-title row">CONTACT US</div>
       <ul class="foot-list row">
