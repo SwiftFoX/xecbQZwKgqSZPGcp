@@ -2,21 +2,13 @@
 <div class="container">
   <div class="footer-content">
     <div class="row">
-      <div class="col">
-      <div class="logo" style="margin-bottom:30px;">
-        <a href="/artificial/index.php">
-          <img src="/artificial/images/logo.png">
-        </a>
-      </div>
-    </div>
-    </div>
-    <div class="row">
-    <div class="col  foot-contact">
-      <div class="foot-col-title row">CONTACT US</div>
+    <div class="col">
+      <div class="foot-col-title row">NAVIGATE</div>
       <ul class="foot-list row">
-        <li><i class="fa fa-mobile"></i>&nbsp; 099 999 9999
-        <li><i class="fa fa-globe"></i>&nbsp; 330 Eger, Szechenyi Istvan u. 14.
-        <li><i class="fa fa-envelope-o"></i>&nbsp; hello@johndoe.com
+        <li><a href="#">Home</a>
+        <li><a href="#">About us</a>
+        <li><a href="#">Our Work</a>
+        <li><a href="#">Contact</a>
       </ul>
     </div>
     <div class="col">
@@ -35,12 +27,14 @@
       </ul>
     </div>
     <div class="col">
-      <div class="foot-col-title row">NAVIGATE</div>
+      <div class="foot-col-title row">CONTACT US</div>
       <ul class="foot-list row">
-        <li><a href="#">Home</a>
-        <li><a href="#">About us</a>
-        <li><a href="#">Our Work</a>
-        <li><a href="#">Contact</a>
+        <p>If you would like to talk to us about an <br>
+          upcoming project then we want to know! <br>
+          Please contact us on the below:</p>
+        <li><b>Tel:</b> 099 999 9999
+        <li><b>Skype:</b> John Doe
+        <li><b>Email:</b> hello@johndoe.com
       </ul>
     </div>
   </div>

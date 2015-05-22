@@ -13,14 +13,14 @@
       </div>
     </div>
     <div class="item">
-      <img src="images/bg.jpg" style=""/>
+      <img src="images/abstract-1.jpg" style=""/>
       <div class="carousel-caption">
         <h3>Lorem ipsum dolor sit amet</h3>
         <p>fringilla felis ut turpis ullamcorp</p>
       </div>
     </div>
     <div class="item">
-      <img src="images/bg.jpg" style=""/>
+      <img src="images/abstract-2.jpg" style=""/>
       <div class="carousel-caption">
         <h3>Lorem ipsum dolor sit amet</h3>
         <p>fringilla felis ut turpis ullamcorp</p>
@@ -53,9 +53,8 @@ $(function(){
 </section>
 <section id="services">
   <div class="container">
-  <div class="service-tab">
-    <a href="services/webdev.php"></a>
-
+  <div class="service-tab" >
+    <a  href="services/webdev.php"></a>
     <div class="service-content">
     <div class="service-icon">
       <img src="images/icons/web.png"/>
@@ -68,7 +67,6 @@ $(function(){
   </div>
   <div class="service-tab">
     <a href="services/motion.php"></a>
-
     <div class="service-content">
     <div class="service-icon">
       <img src="images/icons/motion.png"/>
@@ -81,7 +79,6 @@ $(function(){
   </div>
   <div class="service-tab">
     <a href="services/graphic.php"></a>
-
     <div class="service-content">
     <div class="service-icon">
       <img src="images/icons/graphics.png"/>
@@ -92,9 +89,9 @@ $(function(){
     </div>
   </div>
   </div>
+  <!--
   <div class="service-tab">
     <a href="services/audio.php"></a>
-
     <div class="service-content">
     <div class="service-icon">
       <img src="images/icons/audio.png"/>
@@ -105,5 +102,6 @@ $(function(){
     </div>
   </div>
   </div>
+-->
   </div>
 </section>

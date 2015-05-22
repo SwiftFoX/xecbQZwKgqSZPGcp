@@ -6,7 +6,7 @@
     <div class="container">
       <h2>PROJECTS</h2>
     </div>
-    <img src="./images/abstract-green.jpg" style="height:1080px; margin-top:-25%;"></img>
+    <img src="./images/abstract-green.jpg" style="margin-top:-25%;"></img>
   </section>
   <section id="projects-area" class="dk-grey-sc rg-sc">
     <div class="container">
