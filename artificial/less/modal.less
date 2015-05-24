@@ -1,0 +1,36 @@
+@import "variables";
+@import "elements";
+@import "hover-master/hover";
+.modal {
+  .modal-dialog {
+
+    .modal-content {
+      background-color: #242627;
+      .modal-header,.modal-footer {
+        border-color: #343838;
+
+        .img-responsive {
+          max-width:150px !important;
+          max-height:150px !important;
+          border:4px solid #343838 !important;
+          padding:0 !important;
+        }
+      }
+    }
+  }
+  .close {
+    color:#fff;
+    text-shadow: none;
+    &:hover {
+      color: @color-aa-d-red;
+    }
+  }
+  .divider{
+    width:100%;
+    height:1px;
+    background-color:#343838;
+    display:block;
+    position:absolute;
+    left:0;
+  }
+}
