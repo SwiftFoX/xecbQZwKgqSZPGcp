@@ -30,20 +30,33 @@
           <strong>Dayan Balevski</strong>
         	<p>Graphic Designer &amp; Web Developer</p>
           <div class="member-circle">
+            <button class="bio-btn generic-btn hvr-rectangle-out" data-toggle="modal" data-target="#dayan">VIEW BIO</button>
             <img class="img-responsive" src="./images/me.jpg" alt="Dayan Balevski - Graphic Designer &amp; Web Developer">
             <div class="inner-circle"></div>
             <div class="social-circles">
-              <a class="soc-circle fb-circle" href="https://www.facebook.com/dayan.balevski"
-              data-container="body" data-toggle="popover" data-placement="right" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus."><i class="fa fa-facebook"></i></a>
+              <a class="soc-circle fb-circle" href="https://www.facebook.com/dayan.balevski"><i class="fa fa-facebook"></i></a>
               <a class="soc-circle tw-circle" href="https://twitter.com/Dayan_Balevski"><i class="fa fa-twitter"></i></a>
               <a class="soc-circle li-circle" href="https://www.linkedin.com/pub/dayan-balevski/82/112/96"><i class="fa fa-linkedin"></i></a>
               <a class="soc-circle gp-circle" href="https://plus.google.com/+DayanBalevski/"><i class="fa fa-google-plus"></i></a>
             </div>
           </div>
-          <p class="member-description">Currently studying Computer Science­ with focus on software
-            engineering,­ user interaction­ and information security.­ Over 6 years
-            of experience in web- and­ application development.
-          </p>
+          <div class="modal fade" id="dayan" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                  <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+                </div>
+                <div class="modal-body">
+                  ...
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                  <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
         <div class="member">
           <strong>Ronald Griffin</strong>
@@ -59,10 +72,6 @@
               <a class="soc-circle gp-circle" href="https://plus.google.com/+DayanBalevski/"><i class="fa fa-google-plus"></i></a>
             </div>
           </div>
-          <p class="member-description">Currently studying Computer Science­ with focus on software
-            engineering,­ user interaction­ and information security.­ Over 6 years
-            of experience in web- and­ application development.
-          </p>
         </div>
         <div class="member">
           <strong>John Rowley</strong>
@@ -78,10 +87,10 @@
               <a class="soc-circle gp-circle" href="https://plus.google.com/+DayanBalevski/"><i class="fa fa-google-plus"></i></a>
             </div>
           </div>
-          <p class="member-description quote">Currently studying Computer Science­ with focus on software
+          <!--<p class="member-description quote">Currently studying Computer Science­ with focus on software
             engineering,­ user interaction­ and information security.­ Over 6 years
             of experience in web- and­ application development.
-          </p>
+          </p>-->
         </div>
       </section>
     </div>
@@ -142,12 +151,13 @@ $(function() {
 
   memberCircle.circlemouse({
     onMouseEnter	: function( el ) {
-
       el.addClass('ec-circle-hover hvr-ripple-out');
+      el.parents().find('.bio-btn').fadeIn("fast");
     },
     onMouseLeave	: function( el ) {
       if (!inside ){
         el.removeClass('ec-circle-hover hvr-ripple-out');
+        el.parents().find('.bio-btn').fadeOut("fast");
       }
     },
     onClick			: function( el ) {

@@ -4869,6 +4869,16 @@
   box-sizing: border-box;
   border-width: 8px !important;
 }
+#company #team .member .member-circle .bio-btn,
+#company #team .member img .bio-btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -23px;
+  margin-left: -47px;
+  z-index: 2500;
+  display: none;
+}
 #company #team .member .member-circle:before {
   border: solid 8px #2a2c2d;
   -webkit-transition: all 0.2s ease-out;
@@ -4905,6 +4915,8 @@
   border-color: #f43737 !important;
 }
 #company #team .member .ec-circle-hover .inner-circle {
+  z-index: 2000;
+  background: rgba(0, 0, 0, 0.5);
   border-color: #f43737 !important;
 }
 #company #team .member img {
@@ -4937,6 +4949,7 @@
   display: block;
   width: 40px;
   height: 40px;
+  z-index: 2500;
   verticle-align: middle;
   border: solid 3px #2a2c2d ;
   background: #212323;

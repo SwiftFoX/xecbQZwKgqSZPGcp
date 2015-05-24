@@ -1,3 +1,5 @@
+<?php $error_msg = []; ?>
+
 <header>
   <div id="topbar">
     <div class="container">
@@ -13,10 +15,18 @@
           <span class="caret"></span>
         </button>
         <ul class="dropdown-menu pull-right arrow" role="menu" aria-labelledby="dLabel">
-          <form id="client-login-form" role="form" action="#" method="POST">
+          <form id="client-login-form" role="form" autocomplete="off" action="#" method="POST">
+            <div class="error-log">
+              <?php
+                if (!empty($error_msg)) {
+                	echo '<p class="error">'. implode("<br />", $error_msg) . "</p>";
+                }
+              ?>
+            </div>
             <noscript>
             		<p><input type="hidden" name="nojs" id="nojs" /></p>
             </noscript>
+            <h3>Existing Client Login</h3>
             <span class="form-group has-feedback required">
               <input type="text" placeholder="Email" autocomplete="off" required name="email" id="email"/>
               <span class="glyphicon form-control-feedback" aria-hidden="true"></span>
@@ -28,9 +38,9 @@
               <div class="help-block with-errors"></div>
             </span>
             <span class="form-group">
-              <button type="submit" id="submit"
+              <button type="submit" id="signin"
                       form="client-login-form" class="generic-btn hvr-rectangle-out"
-                      name="submit" value="send">Login</button>
+                      name="signin" value="signin">Sign In</button>
             </span>
           </form>
           <li role="presentation" class="divider"></li>
@@ -81,6 +91,12 @@
 <script>
 $(function()
 {
+  $('#client-login-form').validator();
+
+  $('#signin').on('click', function(){
+    $('#client-login-form').validator('validate');
+  });
+
   $('input[type=checkbox]').on('click', function(){
     if($(this).attr('checked')){
       $(this).attr('checked', false);
