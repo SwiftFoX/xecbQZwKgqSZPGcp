@@ -4860,7 +4860,7 @@
   max-width: 225px;
   max-height: 225px;
   position: relative;
-  height: 100%;
+  height: auto;
   vertical-align: middle;
   -ms-box-sizing: border-box;
   -moz-box-sizing: border-box;
