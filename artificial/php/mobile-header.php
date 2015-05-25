@@ -67,5 +67,6 @@
 $(".toggle-btn").click(function(e) {
     e.preventDefault();
     $(".wrap").toggleClass("active");
+
 });
 </script>
