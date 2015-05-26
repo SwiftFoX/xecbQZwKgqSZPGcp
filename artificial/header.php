@@ -1,6 +1,9 @@
 <?php $error_msg = []; ?>
 <script>
   $(function() {
+
+    var resized = false;
+    var resized2 = false;
     resize($(window).width());
 
     $(window).resize(function() {
@@ -8,10 +11,17 @@
     });
 
     function resize(width){
-      if (width > 480) {
+      if (width > 480 && !resized) {
         $('#head').empty().load('/artificial/php/header.php');
-      }else {
+        $('main').css('width', 'auto');
+        resized = true;
+        resized2 = false;
+      }else if(width <= 480 && !resized2) {
         $('#head').empty().load('/artificial/php/mobile-header.php');
+        alert($(window).width() );
+        $('main').width($(window).width());
+        resized = false;
+        resized2 = true;
       }
     }
   })
