@@ -13,12 +13,13 @@
     function resize(width){
       if (width > 480 && !resized) {
         $('#head').empty().load('/artificial/php/header.php');
+        $("footer").empty().load('/artificial/php/footer.php');
         $('main').css('width', 'auto');
         resized = true;
         resized2 = false;
       }else if(width <= 480 && !resized2) {
         $('#head').empty().load('/artificial/php/mobile-header.php');
-        alert($(window).width() );
+        $('footer').empty().load('/artificial/php/mobile-footer.php');
         $('main').width($(window).width());
         resized = false;
         resized2 = true;

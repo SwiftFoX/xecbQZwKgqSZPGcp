@@ -2,64 +2,76 @@
 @import "elements";
 @import "hover-master/hover";
 
-html,body,.wrap, main, footer {
-  max-width:480px;
+html,
+body,
+.wrap,
+main,
+footer {
+  max-width: 480px;
 }
 .container {
-  max-width:480px;
+  max-width: 480px;
 }
 section.hdr-sc {
-    padding-top: 158px !important;
+  padding-top: 158px !important;
 }
 #full-width-banner {
-  max-width:480px !important;
-  min-width:inherit !important;
-  min-height:100% !important;
+  max-width: 640px !important;
+  min-width: inherit !important;
+  min-height: 100% !important;
 
   .carousel-inner {
-    max-height:inherit !important;
-    min-height:100% !important;
+    max-height: inherit !important;
+    min-height: 100% !important;
 
-    .item, img {
+    .item,
+    img {
       max-width: inherit !important;
-      max-height:inherit !important;
-      min-height:100% !important;
+      max-height: inherit !important;
+      min-height: 100% !important;
       height: 100%;
-      width:100%;
-
+      width: 100%;
     }
     .carousel-caption {
-      top:0 !important;
+      top: 0 !important;
 
       h3 {
         font-size: 30px !important;
-        margin-top:100px !important;
+        margin-top: 100px !important;
       }
 
       p {
-        font-size:18px !important;
+        font-size: 18px !important;
       }
     }
   }
 }
-#portfolio-bar{
-  overflow:hidden;
+#portfolio-bar {
+  overflow: hidden;
   .mission {
-    max-width:540px
+    width: 100%;
+    display: table-row;
+  }
+  a.generic-btn {
+    width: 100%;
+    margin-left: 0 !important;
+    margin-top: 20px;
   }
 }
 
 #services {
   .container {
-    padding:0 ;
+    padding: 0;
   }
   .service-tab {
-    display:inline-block !important;
-    width:100% !important;
+    display: inline-block !important;
+    width: 100% !important;
     border-top: 1px solid #424242 !important;
-
-    &:last-child{
-      border-bottom:1px solid #424242 !important;
+    .service-latest-img {
+      width:100% !important;
+    }
+    &:last-child {
+      border-bottom: 1px solid #424242 !important;
     }
     .box-sizing();
     .service-content {
@@ -70,19 +82,19 @@ section.hdr-sc {
 
 #projects {
   #grid figure img {
-    width:100% !important;
-    height:inherit !important;
+    width: 100% !important;
+    height: inherit !important;
   }
 }
 
 #client-login {
   h3 {
-    font-size:20px;
+    font-size: 20px;
   }
-  ul.dropdown-menu{
-    background:#131517 !important;
+  ul.dropdown-menu {
+    background: #131517 !important;
   }
   form {
-    padding:10px;
+    padding: 10px;
   }
 }

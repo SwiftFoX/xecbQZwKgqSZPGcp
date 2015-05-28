@@ -62,15 +62,19 @@
           <ul class="dropdown-menu pull-right arrow" role="menu" aria-labelledby="dLabel">
             <li role="presentation"><a role="menuitem" href="/artificial/services/webdev.php">
               <span class="service-icon"><img src="/artificial/images/icons/web.png"></span>
-              Web Development</a></li>
+              Web</a></li>
             <li role="presentation" class="divider"></li>
             <li role="presentation"><a role="menuitem" href="/artificial/services/motion.php">
               <span class="service-icon"><img src="/artificial/images/icons/motion.png"></span>
-              Motion Graphics</a></li>
+              Motion</a></li>
             <li role="presentation" class="divider"></li>
             <li role="presentation"><a role="menuitem" href="/artificial/services/graphic.php">
               <span class="service-icon"><img src="/artificial/images/icons/graphics.png"></span>
-              Graphic Design</a></li>
+              Graphics</a></li>
+            <li role="presentation" class="divider"></li>
+            <li role="presentation"><a role="menuitem" href="/artificial/services/hosting.php">
+              <span class="service-icon"><img src="/artificial/images/icons/hosting.png"></span>
+              Hosting</a></li>
           </ul>
         </li>
         <li class="nav-item"><a class="nav-link" href="/artificial/company.php">COMPANY</a></li>

@@ -8,7 +8,7 @@
   <meta name="author" content="SitePoint">
 
   <link rel="stylesheet" href= "/artificial/css/style.css">
-  <link rel="stylesheet" media="(max-width: 480px)" href="/artificial/css/res-360-480.css">
+  <link rel="stylesheet" media="(max-width: 640px)" href="/artificial/css/res-360-480.css">
   <link rel="stylesheet" media="(max-width: 768px)" href="/artificial/css/res-480-768.css">
   <link rel="stylesheet" media="(max-width: 990px)" href="/artificial/css/res-768-990.css">
   <link rel="stylesheet" media="(max-width: 1200px)" href="/artificial/css/res-990-1200.css">

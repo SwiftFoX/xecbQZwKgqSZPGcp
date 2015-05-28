@@ -178,9 +178,10 @@ label.checkbox-label span {
   -ms-flex: 1 0 auto;
   flex: 1 0 auto;
   width: 100%;
+
   //min-width:1192px;
   min-height: 100%;
-  overflow:hidden;
+  overflow: hidden;
 }
 .container {
   margin: 0 auto !important;
@@ -219,6 +220,7 @@ header {
   height: auto;
 }
 main {
+
   //  padding-bottom:260px;
   margin-top: -88px;
 }
@@ -655,7 +657,7 @@ section.img-hdr {
   .service-tab {
     display: table-cell !important;
     .box-sizing();
-    width: 100% / 3 !important;
+    width:33%;
     z-index: 1;
     position: relative;
     text-align: center;
@@ -663,11 +665,13 @@ section.img-hdr {
     font-size: 15px;
     .transition();
     height: auto;
-    background: #242627 !important;
+    background-color:#141414;
+    overflow:hidden;
     .fade();
 
-    &:before {
-      background: #1d1e21 !important;
+    &::before {
+      z-index:1;
+      background: rgba(0, 0, 0, 0.5) !important;
     }
     .service-content {
       position: relative;
@@ -675,7 +679,12 @@ section.img-hdr {
     }
 
     .service-icon {
+      position:relative;
       margin-bottom: 30px;
+      z-index:2;
+      img {
+        height:130px;
+      }
     }
 
     .service-title {
@@ -692,11 +701,29 @@ section.img-hdr {
       display: block;
       width: 100%;
       height: 100%;
-      z-index: 2;
+      z-index: 3;
+    }
+
+    .service-latest-img {
+      position:absolute;
+      display:block;
+      height:100%;
+      left:0;
+      right:0;
+      z-index:0;
+      .opacity(0.3);
+      .grow();
+    }
+
+    .hovered {
+      .prefixed(transform, scale(1.4));
+      .transition();
     }
 
     &:hover {
-      background: #1d1e21 !important;
+      background: rgba(0, 0, 0, 0.9) !important;
+      position:relative;
+      z-index:1;
       .service-title {
         color: @color-aa-d-red !important;
       }
@@ -856,6 +883,7 @@ footer {
   width: 100%;
   display: inline-block;
 }
+
 //bootstrap changes
 .dropdown {
   .caret {
@@ -965,6 +993,7 @@ footer {
     }
   }
 }
+
 //scroll to top
 .scroll-top-wrapper {
   position: fixed;
@@ -1001,6 +1030,7 @@ footer {
 .scroll-top-wrapper i.fa {
   line-height: inherit;
 }
+
 //validator
 .form-group.has-error {
   input,
@@ -1010,6 +1040,7 @@ footer {
     border-color: @color-aa-d-red !important;
   }
 }
+
 // The selectpicker dropdown
 .dropdown-menu {
   background-color: #373737 !important;
@@ -1051,6 +1082,7 @@ footer {
     }
   }
 }
+
 //form-control
 .has-feedback label~.form-control-feedback {
   top: 0 !important;

@@ -10,7 +10,7 @@
       <div class="carousel-caption">
         <h3>Lorem ipsum dolor sit amet</h3>
         <p>fringilla felis ut turpis ullamcorp</p>
-        <a class="generic-btn hvr-rectangle-out" href="/artificial/projects.php">VIEW PROJECT</a> 
+        <a class="generic-btn hvr-rectangle-out" href="/artificial/projects.php">VIEW PROJECT</a>
       </div>
     </div>
     <div class="item">
@@ -55,41 +55,39 @@ $(function(){
   </div>
 </section>
 <section id="services">
-  <div class="container">
+  <div class="container" style="display:table">
   <div class="service-tab" >
     <a  href="services/webdev.php"></a>
+    <img class="service-latest-img" src="images/projects/room-39/banner-1920x1080.png"/>
     <div class="service-content">
     <div class="service-icon">
       <img src="images/icons/web.png"/>
     </div>
     <div class="service-title">WEB DEVELOPMENT</div>
-    <div class="service-description">
-      <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed fringilla felis ut turpis ullamcorper euismod.</span>
-    </div>
     </div>
   </div>
   <div class="service-tab">
     <a href="services/motion.php"></a>
+    <img class="service-latest-img" src="images/abstract-1.jpg"/>
     <div class="service-content">
     <div class="service-icon">
       <img src="images/icons/motion.png"/>
     </div>
     <div class="service-title">MOTION GRAPHICS</div>
-    <div class="service-description">
+  <!--  <div class="service-description">
       <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed fringilla felis ut turpis ullamcorper euismod.</span>
     </div>
+  -->
   </div>
   </div>
   <div class="service-tab">
     <a href="services/graphic.php"></a>
+    <img class="service-latest-img" src="images/bg.jpg"/>
     <div class="service-content">
     <div class="service-icon">
       <img src="images/icons/graphics.png"/>
     </div>
     <div class="service-title">GRAPHIC DESIGN</div>
-    <div class="service-description">
-      <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed fringilla felis ut turpis ullamcorper euismod.</span>
-    </div>
   </div>
   </div>
   <!--
@@ -108,3 +106,16 @@ $(function(){
 -->
   </div>
 </section>
+
+<script>
+$(function() {
+  $('.service-tab').on({
+    mouseenter: function () {
+      $(this).find('.service-latest-img').toggleClass("hovered");
+    },
+    mouseleave: function () {
+      $(this).find('.service-latest-img').toggleClass("hovered");
+    }
+})
+});
+</script>

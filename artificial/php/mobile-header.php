@@ -45,34 +45,37 @@
       </ul>
       </li>
       <li>
-          <a href="#">Home</a>
+          <a href="/artificial/index.php">Home</a>
       </li>
       <li>
-          <a href="#">Projects</a>
+          <a href="/artificial/projects.php">Projects</a>
       </li>
       <li>
         <li class="dropdown" aria-expanded="false">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Services <span class="caret"></span></a>
+          <a href="/artificial/services.php" class="dropdown-toggle" data-toggle="dropdown">Services <span class="caret"></span></a>
           <ul class="dropdown-menu" role="menu">
             <li role="presentation"><a role="menuitem" href="/artificial/services/webdev.php">
               <span class="service-icon"><img src="/artificial/images/icons/web.png"></span>
-              Web Development</a></li>
+              Web</a></li>
             <li role="presentation"><a role="menuitem" href="/artificial/services/motion.php">
               <span class="service-icon"><img src="/artificial/images/icons/motion.png"></span>
-              Motion Graphics</a></li>
+              Motion</a></li>
             <li role="presentation"><a role="menuitem" href="/artificial/services/graphic.php">
               <span class="service-icon"><img src="/artificial/images/icons/graphics.png"></span>
-              Graphic Design</a></li>
+              Graphics</a></li>
+            <li role="presentation"><a role="menuitem" href="/artificial/services/hosting.php">
+              <span class="service-icon"><img src="/artificial/images/icons/hosting.png"></span>
+              Hosting</a></li>
           </ul>
         </li>
 
 
       </li>
       <li>
-          <a href="#">Company</a>
+          <a href="/artificial/company.php">Company</a>
       </li>
       <li>
-          <a href="#">Contact</a>
+          <a href="/artificial/contact.php">Contact</a>
       </li>
   </ul>
 </nav>
@@ -104,12 +107,12 @@ var trigger = $('.hamburger'),
    function hamburger_cross() {
 
      if (isClosed == true) {
-       overlay.hide();
+       overlay.fadeOut('fast');
        trigger.removeClass('is-open');
        trigger.addClass('is-closed');
        isClosed = false;
      } else {
-       overlay.show();
+       overlay.fadeIn('fast');
        trigger.removeClass('is-closed');
        trigger.addClass('is-open');
        isClosed = true;
