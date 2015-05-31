@@ -61,7 +61,7 @@ $(function(){
     <img class="service-latest-img" src="images/projects/room-39/banner-1920x1080.png"/>
     <div class="service-content">
     <div class="service-icon">
-      <img src="images/icons/web.png"/>
+      <img src="images/icons/web-circle.png"/>
     </div>
     <div class="service-title">WEB DEVELOPMENT</div>
     </div>
@@ -71,7 +71,7 @@ $(function(){
     <img class="service-latest-img" src="images/abstract-1.jpg"/>
     <div class="service-content">
     <div class="service-icon">
-      <img src="images/icons/motion.png"/>
+      <img src="images/icons/motion-circle.png"/>
     </div>
     <div class="service-title">MOTION GRAPHICS</div>
   <!--  <div class="service-description">
@@ -85,7 +85,7 @@ $(function(){
     <img class="service-latest-img" src="images/bg.jpg"/>
     <div class="service-content">
     <div class="service-icon">
-      <img src="images/icons/graphics.png"/>
+      <img src="images/icons/design-circle.png"/>
     </div>
     <div class="service-title">GRAPHIC DESIGN</div>
   </div>

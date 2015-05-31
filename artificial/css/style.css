@@ -5548,7 +5548,7 @@ section.img-hdr img {
 }
 #services .service-tab::before {
   z-index: 1;
-  background: rgba(0, 0, 0, 0.5) !important;
+  background: rgba(0, 0, 0, 0.8) !important;
 }
 #services .service-tab .service-content {
   position: relative;
@@ -5630,9 +5630,17 @@ section.img-hdr img {
   -moz-backface-visibility: hidden;
   -o-backface-visibility: hidden;
   backface-visibility: hidden;
+  filter: blur(1px);
+  -webkit-filter: blur(1px);
+  -moz-filter: blur(1px);
+  -o-filter: blur(1px);
+  -ms-filter: blur(1px);
 }
 #services .service-tab:hover {
-  background: rgba(0, 0, 0, 0.9) !important;
+  -webkit-box-shadow: inset 0px 0px 62px 3px #000000 !important;
+  -moz-box-shadow: inset 0px 0px 62px 3px #000000 !important;
+  box-shadow: inset 0px 0px 62px 3px #000000 !important;
+  background: #000000 !important;
   position: relative;
   z-index: 1;
 }
