@@ -1,4 +1,4 @@
-<!--<div class="container">-->
+<div class="container">
   <div class="footer-content">
     <div class="row">
       <div class="col" style="width: 10%">
@@ -38,7 +38,7 @@
           <li><a href="/artificial/services/graphic.php#section=print-design">Print Design</a>
           <li><a href="/artificial/services/graphic.php#section=identity-brand">Identity &amp; Branding</a>
           <li><a href="/artificial/services/enterprise.php">Enterprise Solutions</a>
-            <li><a href="/artificial/services/hosting.php">Server Hosting</a>
+          <li><a href="/artificial/services/hosting.php">Server Hosting</a>
         </div>
       </ul>
     </div>
@@ -53,4 +53,4 @@
     </div>
   </div>
 </div>
-<!--</div>-->
+</div>
