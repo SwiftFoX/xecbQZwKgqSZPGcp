@@ -1,22 +1,5 @@
 <link rel="stylesheet" href="/artificial/css/services.css">
-<script src="http://pupunzi.com/mb.components/mb.YTPlayer/demo/inc/jquery.mb.YTPlayer.js"></script>
-<style>
-video { display: block; }
-video#bgvid {
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  min-width: 100%;
-  min-height: 100%;
-  width: auto;
-  height: auto;
-  z-index: -100;
-  -webkit-transform: translateX(-50%) translateY(-50%);
-  transform: translateX(-50%) translateY(-50%);
-  background: url(polina.jpg) no-repeat;
-  background-size: cover;
-}
-</style>
+
 <section id="motion" class="service hdr-sc">
   <section class="img-hdr  video-section">
     <div class="container">
