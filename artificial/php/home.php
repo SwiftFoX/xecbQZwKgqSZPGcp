@@ -54,8 +54,7 @@ $(function(){
     </div>
   </div>
 </section>
-<section id="services">
-  <div class="container" style="display:table">
+<section id="services" style="display:table; width:100%">
   <div class="service-tab" >
     <a  href="services/webdev.php"></a>
     <img class="service-latest-img" src="images/projects/room-39/banner-1920x1080.png"/>
@@ -63,7 +62,7 @@ $(function(){
     <div class="service-icon">
       <img src="images/icons/web-circle.png"/>
     </div>
-    <div class="service-title">WEB DEVELOPMENT</div>
+    <div class="service-title">WEB</div>
     </div>
   </div>
   <div class="service-tab">
@@ -73,7 +72,7 @@ $(function(){
     <div class="service-icon">
       <img src="images/icons/motion-circle.png"/>
     </div>
-    <div class="service-title">MOTION GRAPHICS</div>
+    <div class="service-title">MOTION</div>
   <!--  <div class="service-description">
       <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed fringilla felis ut turpis ullamcorper euismod.</span>
     </div>
@@ -87,8 +86,19 @@ $(function(){
     <div class="service-icon">
       <img src="images/icons/design-circle.png"/>
     </div>
-    <div class="service-title">GRAPHIC DESIGN</div>
+    <div class="service-title">GRAPHIC</div>
   </div>
+  </div>
+
+  <div class="service-tab" >
+    <a  href="services/hosting.php"></a>
+    <img class="service-latest-img" src="images/projects/room-39/banner-1920x1080.png"/>
+    <div class="service-content">
+    <div class="service-icon">
+      <img src="images/icons/hosting-circle.png"/>
+    </div>
+    <div class="service-title">HOSTING</div>
+    </div>
   </div>
   <!--
   <div class="service-tab">
@@ -104,7 +114,6 @@ $(function(){
   </div>
   </div>
 -->
-  </div>
 </section>
 
 <script>

@@ -657,7 +657,7 @@ section.img-hdr {
   .service-tab {
     display: table-cell !important;
     .box-sizing();
-    width:33%;
+    width:auto;
     z-index: 1;
     position: relative;
     text-align: center;
@@ -667,7 +667,7 @@ section.img-hdr {
     height: auto;
     background-color:#141414;
     overflow:hidden;
-    .fade();
+    //.fade();
 
     &::before {
       z-index:1;
@@ -690,7 +690,7 @@ section.img-hdr {
     .service-title {
       color: #fff;
       font-weight: 500;
-      font-size: 18px;
+      font-size: 25px;
       margin-bottom: 10px;
       .transition();
     }
@@ -712,19 +712,13 @@ section.img-hdr {
       right:0;
       z-index:0;
       .opacity(0.3);
-      .grow();
+      //.grow();
     }
 
     .hovered {
-      .prefixed(transform, scale(1.4));
-      .transition();
-      filter: blur(1px);
-// Browser Specific
--webkit-filter: blur(1px);
--moz-filter: blur(1px);
--o-filter: blur(1px);
--ms-filter: blur(1px);
-
+      //.prefixed(transform, scale(1.4));
+      //.transition();
+      //.blur(1px);
     }
 
     &:hover {
@@ -758,10 +752,9 @@ footer {
 
   .footer-content {
     float: left;
-    width: auto;
     display: block;
     margin: 0;
-
+    width:100%;
     .pipe {
       margin: 0 10px;
     }
@@ -784,7 +777,7 @@ footer {
       padding: 0 30px;
       text-align: left;
       vertical-align: top;
-
+      width:auto;
       .foot-col-title {
         color: #fff;
         font-size: 16px;

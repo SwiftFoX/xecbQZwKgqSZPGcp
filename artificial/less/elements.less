@@ -13,6 +13,14 @@
     user-select: none;
 }
 
+.blur(@size: 1px){
+  filter: blur(@size);
+  -webkit-filter: blur(@size);
+  -moz-filter: blur(@size);
+  -o-filter: blur(@size);
+  -ms-filter: blur(@size);
+}
+
 .arrow-down (@size: 4px) {
   border: solid transparent;
   content: "";

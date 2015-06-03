@@ -5513,7 +5513,7 @@ section.img-hdr img {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  width: 33%;
+  width: auto;
   z-index: 1;
   position: relative;
   text-align: center;
@@ -5523,28 +5523,13 @@ section.img-hdr img {
   -moz-transition: all 0.2s ease-out;
   -o-transition: all 0.2s ease-out;
   transition: all 0.2s ease-out;
+  -webkit-backface-visibility: hidden;
   -moz-backface-visibility: hidden;
   -o-backface-visibility: hidden;
+  backface-visibility: hidden;
   height: auto;
   background-color: #141414;
-  display: inline-block;
-  vertical-align: middle;
-  -webkit-transform: translateZ(0);
-  transform: translateZ(0);
-  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
-  -moz-osx-font-smoothing: grayscale;
   overflow: hidden;
-  -webkit-transition-duration: 0.3s;
-  transition-duration: 0.3s;
-  -webkit-transition-property: color, background-color;
-  transition-property: color, background-color;
-}
-#services .service-tab:hover,
-#services .service-tab:focus,
-#services .service-tab:active {
-  background-color: #2098d1;
 }
 #services .service-tab::before {
   z-index: 1;
@@ -5565,7 +5550,7 @@ section.img-hdr img {
 #services .service-tab .service-title {
   color: #fff;
   font-weight: 500;
-  font-size: 18px;
+  font-size: 25px;
   margin-bottom: 10px;
   -webkit-transition: all 0.2s ease-out;
   -moz-transition: all 0.2s ease-out;
@@ -5600,41 +5585,6 @@ section.img-hdr img {
   opacity: 0.3;
   -ms-filter: progid:DXImageTransform.Microsoft.Alpha(opacity=30);
   filter: alpha(opacity=30);
-  display: inline-block;
-  vertical-align: middle;
-  -webkit-transform: translateZ(0);
-  transform: translateZ(0);
-  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-transition-duration: 0.3s;
-  transition-duration: 0.3s;
-  -webkit-transition-property: transform;
-  transition-property: transform;
-}
-#services .service-tab .service-latest-img:hover,
-#services .service-tab .service-latest-img:focus,
-#services .service-tab .service-latest-img:active {
-  -webkit-transform: scale(1.1);
-  transform: scale(1.1);
-}
-#services .service-tab .hovered {
-  -webkit-transform: scale(1.4);
-  transform: scale(1.4);
-  -webkit-transition: all 0.2s ease-out;
-  -moz-transition: all 0.2s ease-out;
-  -o-transition: all 0.2s ease-out;
-  transition: all 0.2s ease-out;
-  -webkit-backface-visibility: hidden;
-  -moz-backface-visibility: hidden;
-  -o-backface-visibility: hidden;
-  backface-visibility: hidden;
-  filter: blur(1px);
-  -webkit-filter: blur(1px);
-  -moz-filter: blur(1px);
-  -o-filter: blur(1px);
-  -ms-filter: blur(1px);
 }
 #services .service-tab:hover {
   -webkit-box-shadow: inset 0px 0px 62px 3px #000000 !important;
@@ -5667,9 +5617,9 @@ footer {
 }
 footer .footer-content {
   float: left;
-  width: auto;
   display: block;
   margin: 0;
+  width: 100%;
 }
 footer .footer-content .pipe {
   margin: 0 10px;
@@ -5692,6 +5642,7 @@ footer .footer-content .col {
   padding: 0 30px;
   text-align: left;
   vertical-align: top;
+  width: auto;
 }
 footer .footer-content .col .foot-col-title {
   color: #fff;
