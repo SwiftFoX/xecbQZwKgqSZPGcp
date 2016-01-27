@@ -4822,8 +4822,7 @@
   display: table;
 }
 #company #team .member {
-  display: table-cell;
-  padding: 0 2%;
+  padding: 8px 0;
   color: #545454;
   text-align: center;
   -ms-box-sizing: border-box;

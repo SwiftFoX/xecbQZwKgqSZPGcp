@@ -13,7 +13,7 @@
       ?>
     </div>
     <form id="contact-form" role="form"
-      class="frm-lt-50" method="POST" action="<?php echo basename(__FILE__); ?>">
+      class="frm-lt-50 col-sm-12 col-md-6 col-lg-6" method="POST" action="<?php echo basename(__FILE__); ?>">
       <noscript>
       		<p><input type="hidden" name="nojs" id="nojs" /></p>
       </noscript>
@@ -70,7 +70,7 @@
         <?php if (isset($disable) && $disable === true) echo ' disabled="disabled"'; ?>>Send</button>
       </span>
     </form>
-    <div class="frm-rt-50">
+    <div class="frm-rt-50  col-sm-12 col-md-6 col-lg-6">
       <h3>Contact Us</h3>
       <div style="height: 50px;" class="divider"></div>
       <p>Question, feel free to contact us either in person , our staff are at your disposal .</p>

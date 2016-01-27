@@ -55,9 +55,9 @@ $(function(){
   </div>
 </section>
 <section id="services" style="display:table; width:100%">
-  <div class="service-tab" >
+  <div class="service-tab col-sm-12 col-md-6 col-lg-3" >
     <a  href="services/webdev.php"></a>
-    <img class="service-latest-img" src="images/projects/room-39/banner-1920x1080.png"/>
+    <img class="service-latest-img" style="background-image: urL('./images/projects/room-39/banner-1920x1080.png')"/>
     <div class="service-content">
     <div class="service-icon">
       <img src="images/icons/web-circle.png"/>
@@ -65,9 +65,9 @@ $(function(){
     <div class="service-title">WEB</div>
     </div>
   </div>
-  <div class="service-tab">
+  <div class="service-tab col-sm-12 col-md-6 col-lg-3">
     <a href="services/motion.php"></a>
-    <img class="service-latest-img" src="images/abstract-1.jpg"/>
+    <img class="service-latest-img" style="background-image: urL('./images/abstract-1.jpg')"/>
     <div class="service-content">
     <div class="service-icon">
       <img src="images/icons/motion-circle.png"/>
@@ -79,9 +79,9 @@ $(function(){
   -->
   </div>
   </div>
-  <div class="service-tab">
+  <div class="service-tab col-sm-12 col-md-6 col-lg-3">
     <a href="services/graphic.php"></a>
-    <img class="service-latest-img" src="images/bg.jpg"/>
+    <img class="service-latest-img" style="background-image: urL('./images/bg.jpg')"/>
     <div class="service-content">
     <div class="service-icon">
       <img src="images/icons/design-circle.png"/>
@@ -90,9 +90,9 @@ $(function(){
   </div>
   </div>
 
-  <div class="service-tab" >
+  <div class="service-tab col-sm-12 col-md-6 col-lg-3" >
     <a  href="services/hosting.php"></a>
-    <img class="service-latest-img" src="images/projects/room-39/banner-1920x1080.png"/>
+    <img class="service-latest-img" style="background-image: urL('./images/projects/room-39/banner-1920x1080.png')"/>
     <div class="service-content">
     <div class="service-icon">
       <img src="images/icons/hosting-circle.png"/>

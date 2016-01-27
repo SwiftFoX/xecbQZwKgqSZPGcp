@@ -91,7 +91,9 @@
   outline: 0 !important;
 }
 #contact textarea {
-  height: 180px !important;
+  min-width: 100%;
+  width: 100%;
+  min-height: 180px !important;
 }
 #contact .has-success label {
   color: #898989 !important;

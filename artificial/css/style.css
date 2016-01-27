@@ -4967,6 +4967,15 @@ label.checkbox-label span:focus {
 label.checkbox-label span:hover {
   border-color: #f43737 !important;
 }
+.spacer-20 {
+  padding: 20px;
+}
+.spacer-10 {
+  padding: 10px;
+}
+.spacer-5 {
+  padding: 5px;
+}
 .chkk.checked {
   position: relative;
   background-color: transparent !important;
@@ -5166,7 +5175,7 @@ header.header-divider h2 {
 section.img-hdr {
   overflow: hidden;
   display: block;
-  height: 180px;
+  height: 220px;
   width: 100%;
   position: relative;
   top: 0;
@@ -5243,6 +5252,8 @@ section.img-hdr img {
   opacity: 0.5;
   -ms-filter: progid:DXImageTransform.Microsoft.Alpha(opacity=50);
   filter: alpha(opacity=50);
+  min-height: 640px;
+  max-width: inherit !important;
 }
 #topbar {
   background-color: #1d1e21;
@@ -5508,12 +5519,10 @@ section.img-hdr img {
   background-color: #242627;
 }
 #services .service-tab {
-  display: table-cell !important;
   -ms-box-sizing: border-box;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  width: auto;
   z-index: 1;
   position: relative;
   text-align: center;
@@ -5571,13 +5580,26 @@ section.img-hdr img {
   width: 100%;
   height: 100%;
   z-index: 3;
+  -webkit-transition: all all ease-out !important;
+  -moz-transition: all all ease-out !important;
+  -o-transition: all all ease-out !important;
+  transition: all all ease-out !important;
+  -webkit-backface-visibility: hidden !important;
+  -moz-backface-visibility: hidden !important;
+  -o-backface-visibility: hidden !important;
+  backface-visibility: hidden !important;
+  margin-left: -15px;
+}
+#services .service-tab .hovered {
+  background-size: 300% !important;
 }
 #services .service-tab .service-latest-img {
   position: absolute;
+  padding: 180px;
   display: block;
   height: 100%;
+  width: 100%;
   left: 0;
-  right: 0;
   z-index: 0;
   -moz-opacity: 0.3;
   -khtml-opacity: 0.3;
@@ -5585,6 +5607,23 @@ section.img-hdr img {
   opacity: 0.3;
   -ms-filter: progid:DXImageTransform.Microsoft.Alpha(opacity=30);
   filter: alpha(opacity=30);
+  -webkit-transition: all all ease-out !important;
+  -moz-transition: all all ease-out !important;
+  -o-transition: all all ease-out !important;
+  transition: all all ease-out !important;
+  -webkit-backface-visibility: hidden !important;
+  -moz-backface-visibility: hidden !important;
+  -o-backface-visibility: hidden !important;
+  backface-visibility: hidden !important;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 200%;
+  background-clip: border-box;
+  transition: background-size 0.2s ease-in;
+  -moz-transition: background-size 0.2s ease-in;
+  -ms-transition: background-size 0.2s ease-in;
+  -o-transition: background-size 0.2s ease-in;
+  -webkit-transition: background-size 0.2s ease-in;
 }
 #services .service-tab:hover {
   -webkit-box-shadow: inset 0px 0px 62px 3px #000000 !important;
@@ -5719,17 +5758,6 @@ footer .footer-content .foot-list p {
 }
 footer .footer-content .foot-list b {
   color: #4e5159;
-}
-.frm-lt-50 {
-  width: 48%;
-  display: inline-block;
-  margin-right: 2%;
-  float: left;
-}
-.frm-rt-50 {
-  width: 46%;
-  float: left;
-  display: inline-block;
 }
 .form-group.required label:after {
   display: inline;

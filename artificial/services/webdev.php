@@ -6,7 +6,10 @@
     <main>
       <?php require_once('../php/webdev.php'); ?>
     </main>
-    <?php require_once('../footer.php'); ?>
+
+    <?php require('../footer.php'); ?>
+
   </div>
+
 </body>
 </html>

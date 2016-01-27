@@ -26,9 +26,8 @@
   <section class="med-lt-grey-sc rg-sc team-sc">
     <div class="container">
       <section id="team">
-        <div class="member">
-          <h3>Dayan Balevski</h3>
-        	<p>Graphic &amp; Web Design</p>
+        <div class="member col-sm-6 col-md-6 col-lg-3">
+
           <div class="member-circle">
             <button class="bio-btn generic-btn hvr-rectangle-out" data-toggle="modal" data-target="#dayan">VIEW BIO</button>
             <img class="img-responsive" src="./images/me.jpg" alt="Dayan Balevski - Graphic Designer &amp; Web Developer">
@@ -40,6 +39,9 @@
               <a class="soc-circle gp-circle" href="https://plus.google.com/+DayanBalevski/"><i class="fa fa-google-plus"></i></a>
             </div>
           </div>
+          <div class="spacer-10"></div>
+          <h3>Dayan Balevski</h3>
+          <p>Graphic &amp; Web Design</p>
           <div class="modal fade" id="dayan" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
             <div class="modal-dialog">
               <div class="modal-content">
@@ -131,9 +133,8 @@
             </div>
           </div>
         </div>
-        <div class="member">
-          <h3>Ronald Griffin</h3>
-        	<p>Motion Graphics Designer</p>
+        <div class="member  col-sm-6 col-md-6 col-lg-3">
+
           <div class="member-circle">
             <button class="bio-btn generic-btn hvr-rectangle-out" data-toggle="modal" data-target="#ronald">VIEW BIO</button>
             <img class="img-responsive" src="http://up.artificialanimation.com/images/роналд-1432495558.jpg" alt="Dayan Balevski - Graphic Designer &amp; Web Developer">
@@ -146,6 +147,9 @@
               <a class="soc-circle gp-circle" href="https://plus.google.com/+DayanBalevski/"><i class="fa fa-google-plus"></i></a>
             </div>
           </div>
+          <div class="spacer-10"></div>
+          <h3>Ronald Griffin</h3>
+          <p>Motion Graphics Designer</p>
           <div class="modal fade" id="ronald" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
             <div class="modal-dialog">
               <div class="modal-content">
@@ -166,9 +170,8 @@
             </div>
           </div>
         </div>
-        <div class="member">
-          <h3>John Rowley</h3>
-        	<p>System Administrator</p>
+        <div class="member  col-sm-6 col-md-6 col-lg-3">
+
           <div class="member-circle">
             <button class="bio-btn generic-btn hvr-rectangle-out" data-toggle="modal" data-target="#john">VIEW BIO</button>
             <img class="img-responsive" src="./images/me.jpg" alt="Dayan Balevski - Graphic Designer &amp; Web Developer">
@@ -181,6 +184,9 @@
               <a class="soc-circle gp-circle" href="https://plus.google.com/+DayanBalevski/"><i class="fa fa-google-plus"></i></a>
             </div>
           </div>
+          <div class="spacer-10"></div>
+          <h3>John Rowley</h3>
+          <p>System Administrator</p>
           <div class="modal fade" id="john" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
             <div class="modal-dialog">
               <div class="modal-content">
@@ -201,9 +207,8 @@
             </div>
           </div>
       </div>
-      <div class="member">
-        <h3>Marcus Knudsen</h3>
-        <p>Audio Technician</p>
+      <div class="member  col-sm-6 col-md-6 col-lg-3">
+
         <div class="member-circle">
           <button class="bio-btn generic-btn hvr-rectangle-out" data-toggle="modal" data-target="#marcus">VIEW BIO</button>
           <img class="img-responsive" src="http://up.artificialanimation.com/images/маркус-1432495685.jpg" alt="Dayan Balevski - Graphic Designer &amp; Web Developer">
@@ -216,6 +221,9 @@
             <a class="soc-circle gp-circle" href="https://plus.google.com/+DayanBalevski/"><i class="fa fa-google-plus"></i></a>
           </div>
         </div>
+        <div class="spacer-10"></div>
+        <h3>Marcus Knudsen</h3>
+        <p>Audio Technician</p>
         <div class="modal fade" id="marcus" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
           <div class="modal-dialog">
             <div class="modal-content">

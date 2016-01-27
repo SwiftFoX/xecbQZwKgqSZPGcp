@@ -6,12 +6,10 @@ footer {
   max-width: 768px;
 }
 #full-width-banner {
-  max-width: 768px;
   min-width: 550px;
-  max-height: 400px;
 }
 #full-width-banner .carousel-inner {
-  max-height: 400px;
+  height: 640px;
 }
 #full-width-banner .carousel-inner .item + img {
   max-height: 400px;

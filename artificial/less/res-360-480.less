@@ -18,19 +18,23 @@ section.hdr-sc {
 #full-width-banner {
   max-width: 640px !important;
   min-width: inherit !important;
-  min-height: 100% !important;
+  height:480px;
 
   .carousel-inner {
     max-height: inherit !important;
     min-height: 100% !important;
 
-    .item,
-    img {
-      max-width: inherit !important;
-      max-height: inherit !important;
-      min-height: 100% !important;
+    .item {
       height: 100%;
       width: 100%;
+      position:relative;
+    }
+
+    img {
+      position:absolute;
+      width:auto;
+      height:100%;
+      min-height: 640px !important;
     }
     .carousel-caption {
       top: 0 !important;
